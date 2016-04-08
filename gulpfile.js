@@ -1,4 +1,5 @@
 ﻿var gulp = require('gulp'),
+    sass = require('gulp-sass');
     stylus = require('gulp-stylus'),
     minifyCSS = require('gulp-minify-css'),
     nib = require('nib'),
@@ -6,7 +7,7 @@
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     browserSync = require('browser-sync'),
-    notify = require("gulp-notify");
+    notify = require("gulp-notify")
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -15,6 +16,8 @@ gulp.task('browser-sync', function() {
         }
     });
 });
+
+
 
 var paths = {
     scripts: [
@@ -30,7 +33,14 @@ gulp.task('stylus', function () {
         .pipe(stylus({ error: true, use: [nib()] }))
         .pipe(minifyCSS())
         .pipe(gulp.dest('./css'))
-        .pipe(notify("CSS OK!"))
+        .pipe(notify("CSS OK!"));
+});
+
+gulp.task('styles', function() {
+    gulp.src('sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./css'))
+        .pipe(notify("CSS OK!"));
 });
 
 gulp.task('scripts', function () {
@@ -42,9 +52,9 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(paths.css, ['stylus', browserSync.reload]);
+    gulp.watch(paths.css, ['styles', browserSync.reload]);
     gulp.watch(paths.scripts, ['scripts', browserSync.reload]);
     gulp.watch(paths.html, ['', browserSync.reload]);
 });
 
-gulp.task('default', ['watch', 'stylus', 'scripts', 'browser-sync']);
+gulp.task('default', ['watch', 'styles', 'scripts', 'browser-sync']);
