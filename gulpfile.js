@@ -24,7 +24,7 @@ var paths = {
         './js/jquery-1.12.2.js',
         './js/main.js'
     ],
-    css: 'css/**/*.styl',
+    css: './content/testecss/**/*.scss',
     html: '*.html'
 };
 
@@ -37,10 +37,10 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('styles', function() {
-    gulp.src('sass/**/*.scss')
+    gulp.src('./content/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css'))
-        .pipe(notify("CSS OK!"));
+        .pipe(gulp.dest('./content/cssteste'))
+        .pipe(notify("CSS Sass OK!"));
 });
 
 gulp.task('scripts', function () {
@@ -53,8 +53,8 @@ gulp.task('scripts', function () {
 
 gulp.task('watch', function () {
     gulp.watch(paths.css, ['styles', browserSync.reload]);
-    gulp.watch(paths.scripts, ['scripts', browserSync.reload]);
-    gulp.watch(paths.html, ['', browserSync.reload]);
+    //gulp.watch(paths.scripts, ['scripts', browserSync.reload]);
+   // gulp.watch(paths.html, ['', browserSync.reload]);
 });
 
 gulp.task('default', ['watch', 'styles', 'scripts', 'browser-sync']);
