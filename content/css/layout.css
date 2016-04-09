@@ -1,10 +1,12 @@
-/* Menu */
+.teste {
+  border: 1px solid #F00;
+  width: 71.42857%; }
 
+/* Menu */
 body {
   background: #252627;
   overflow: hidden;
-  display: block;
-}
+  display: block; }
 
 #nav_bar {
   background: #181818;
@@ -14,12 +16,9 @@ body {
   top: 0;
   z-index: 3;
   min-height: 500px;
-  left:0px;
-}
-
+  left: 0px; }
 
 /*  Nawigacja  */
-
 #nav_bar nav {
   display: block;
   text-align: center;
@@ -27,8 +26,7 @@ body {
   height: 210px;
   top: 50%;
   margin-top: -120px;
-  width: 100%;
-}
+  width: 100%; }
 
 #nav_bar nav a {
   font-size: 12px;
@@ -36,24 +34,18 @@ body {
   display: block;
   line-height: 45px;
   height: 45px;
-  position: relative;
-}
+  position: relative; }
 
 #nav_bar nav a i {
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
+  transition: all 0.3s ease-out; }
 
 #nav_bar nav a:hover i {
-  opacity: 0;
-}
+  opacity: 0; }
 
 #nav_bar nav a.active,
 #nav_bar nav a:hover {
-  color: #08fdd8;
-}
-
-
+  color: #08fdd8; }
 
 #nav_bar nav a:after {
   content: '';
@@ -65,56 +57,42 @@ body {
   text-align: center;
   opacity: 0;
   -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
+  transition: all 0.3s ease-out; }
 
 #nav_bar nav a:first-child:after {
-  content: 'HOME';
-}
+  content: 'HOME'; }
 
 #nav_bar nav a:first-child + a:after {
-  content: 'SOBRE';
-}
+  content: 'SOBRE'; }
 
 #nav_bar nav a:first-child + a + a:after {
-  content: 'SKILLS';
-}
+  content: 'SKILLS'; }
 
 #nav_bar nav a:first-child + a + a + a:after {
-  content: 'TRABALHOS';
-}
+  content: 'TRABALHOS'; }
 
 #nav_bar nav a:first-child + a + a + a + a:after {
-  content: 'CONTATO';
-}
+  content: 'CONTATO'; }
 
 #nav_bar nav.pl a:first-child:after {
-  content: 'START';
-}
+  content: 'START'; }
 
 #nav_bar nav.pl a:first-child + a:after {
-  content: 'O MNIE';
-}
+  content: 'O MNIE'; }
 
 #nav_bar nav.pl a:first-child + a + a:after {
-  content: 'SKILSY';
-}
+  content: 'SKILSY'; }
 
 #nav_bar nav.pl a:first-child + a + a + a:after {
-  content: 'PORTFOLIO';
-}
+  content: 'PORTFOLIO'; }
 
 #nav_bar nav.pl a:first-child + a + a + a + a:after {
-  content: 'KONTAKT';
-}
+  content: 'KONTAKT'; }
 
 #nav_bar nav a:hover:after {
-  opacity: 1;
-}
-
+  opacity: 1; }
 
 /*  sociale  */
-
 #nav_bar ul {
   position: absolute;
   bottom: 20px;
@@ -123,17 +101,14 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
-  margin: 0;
-}
+  margin: 0; }
 
 #nav_bar ul li a {
   padding: 7px 0;
   display: block;
   font-size: 15px;
   line-height: 16px;
-  color: #4d4d4e;
-}
+  color: #4d4d4e; }
 
 #nav_bar ul li a:hover {
-  color: #08fdd8;
-}
+  color: #08fdd8; }

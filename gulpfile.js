@@ -36,10 +36,10 @@ gulp.task('stylus', function () {
         .pipe(notify("CSS OK!"));
 });
 
-gulp.task('styles', function() {
+gulp.task('sass', function() {
     gulp.src('./content/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./content/cssteste'))
+        .pipe(gulp.dest('./content/css'))
         .pipe(notify("CSS Sass OK!"));
 });
 
@@ -52,9 +52,9 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(paths.css, ['styles', browserSync.reload]);
+    gulp.watch(paths.css, ['sass', browserSync.reload]);
     //gulp.watch(paths.scripts, ['scripts', browserSync.reload]);
    // gulp.watch(paths.html, ['', browserSync.reload]);
 });
 
-gulp.task('default', ['watch', 'styles', 'scripts', 'browser-sync']);
+gulp.task('default', ['watch', 'sass', 'scripts', 'browser-sync']);

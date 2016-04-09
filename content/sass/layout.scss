@@ -1,3 +1,7 @@
+.teste{
+ border:1px solid #F00;
+ width: percentage(5/7);   
+}     
 /* Menu */
 
 body {
@@ -54,7 +58,7 @@ body {
 }
 
 
-
+ 
 #nav_bar nav a:after {
   content: '';
   font-size: 9px;
@@ -120,7 +124,7 @@ body {
   bottom: 20px;
   width: 100%;
   display: block;
-  padding: 0;
+  padding: 0; 
   list-style: none;
   text-align: center;
   margin: 0;
@@ -137,3 +141,6 @@ body {
 #nav_bar ul li a:hover {
   color: #08fdd8;
 }
+.teste2{
+  
+} 

@@ -4,11 +4,13 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
-    <link href="content/css/main.css" rel="stylesheet">
+    <link href="content/css/layout.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="/content/js/app.js"></script>
 </head>
 
-<body>
-    <h1>Teste</h1>
+<body ng-app="flapperNews" ng-controller="MainCtrl">
+    <h1>Test asasdasdadase{{test}}</h1>
     <div id="nav_bar">
         <nav class="en">
             <a rel="index" href="" class="home-link active"><i class="fa fa-home"></i>HOME</a>
@@ -29,6 +31,7 @@
         <a id="mobile-link" href=""><i class="fa fa-bars"></i></a>
 
     </div>
+    
 </body>
 
 </html>
