@@ -24,7 +24,7 @@ var paths = {
         './js/jquery-1.12.2.js',
         './js/main.js'
     ],
-    css: './content/testecss/**/*.scss',
+    css: './content/sass/**/*.scss',
     html: '*.html'
 };
 
