@@ -8,15 +8,20 @@
     <link href="content/css/fonts.css" rel="stylesheet">
     <link href="content/css/layout.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-route.js"></script>
     <script src="/content/js/app.js"></script>
+    <script src="/app/controller/MainCtrl.js"></script>
+    <script src="/app/controller/AboutCtrl.js"></script>
+    
 </head>
 
-<body ng-app="flapperNews" ng-controller="MainCtrl">
+<body ng-app="flapperNews">
     
     <div id="nav_bar">
        <div class="perfil">
            <img src="content/img/perfil.jpg" alt="">
            <span>Diego Oliveira</span>
+     
        </div>
         <nav >
             <a rel="home" href="" class="home-link active">HOME</a>
@@ -37,20 +42,11 @@
         
 
     </div>
-    <div id="page">
-        <div class="wrap">
-            <section class="home">
-               
-                <h1>Diego Oliveira<br/>
-                back end <span>t</span> front end <br/>
-                Web Developer
-                </h1>
-                <a href="" class="btn">Contato</a>
-            </section>
-            
-        </div>
-    </div>
     
+    <div ng-view>
+        
+    </div>
+    {{error}}
 </body>
 
 </html>
