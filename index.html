@@ -4,32 +4,51 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="content/css/fonts.css" rel="stylesheet">
     <link href="content/css/layout.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
     <script src="/content/js/app.js"></script>
 </head>
 
 <body ng-app="flapperNews" ng-controller="MainCtrl">
-    <h1>Test asasdasdadase{{test}}</h1>
+    
     <div id="nav_bar">
-        <nav class="en">
-            <a rel="index" href="" class="home-link active"><i class="fa fa-home"></i>HOME</a>
-            <a rel="about" href="" class=""><i class="fa fa-user-secret"></i></a>
-            <a rel="skills" href="" class=""><i class="fa fa-code"></i></a>
-            <a rel="gallery" href="" class=""><i class="fa fa-picture-o"></i></a>
-            <a rel="contact" href="" class=""><i class="fa fa-envelope-o"></i></a>
+       <div class="perfil">
+           <img src="content/img/perfil.jpg" alt="">
+           <span>Diego Oliveira</span>
+       </div>
+        <nav >
+            <a rel="home" href="" class="home-link active">HOME</a>
+            <a rel="sobre" href="" class="">SOBRE</a>
+            <a rel="skills" href="" class="">SKILLS</a>
+            <a rel="lab" href="" class="">LAB</a>
+            <a rel="contato" href="" class="">CONTATO</a>
 
         </nav>
 
         <ul>
-            <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
             <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="" target="_blank"><i class="fa fa-rss"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
         </ul>
 
-        <a id="mobile-link" href=""><i class="fa fa-bars"></i></a>
+        
 
+    </div>
+    <div id="page">
+        <div class="wrap">
+            <section class="home">
+               
+                <h1>Diego Oliveira<br/>
+                back end <span>t</span> front end <br/>
+                Web Developer
+                </h1>
+                <a href="" class="btn">Contato</a>
+            </section>
+            
+        </div>
     </div>
     
 </body>

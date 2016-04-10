@@ -1,13 +1,9 @@
-.teste {
-  border: 1px solid #F00;
-  width: 71.42857%; }
-
-/* Menu */
 body {
   background: #252627;
   overflow: hidden;
   display: block; }
 
+/* Menu */
 #nav_bar {
   background: #181818;
   width: 91px;
@@ -17,6 +13,20 @@ body {
   z-index: 3;
   min-height: 500px;
   left: 0px; }
+  #nav_bar .perfil {
+    text-align: center;
+    background: #000;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #0af258; }
+    #nav_bar .perfil img {
+      max-width: 120px;
+      border-radius: 50%;
+      margin: 37px 0 10px  0; }
+    #nav_bar .perfil span {
+      color: #fff;
+      font-family: 'bariol_regular';
+      font-size: 18px;
+      text-align: center; }
 
 /*  Nawigacja  */
 #nav_bar nav {
@@ -26,71 +36,19 @@ body {
   height: 210px;
   top: 50%;
   margin-top: -120px;
-  width: 100%; }
+  width: 100%;
+  font-family: 'bariol_regular'; }
 
 #nav_bar nav a {
-  font-size: 12px;
-  color: #4d4d4e;
+  font-size: 16px;
+  color: #fff;
   display: block;
   line-height: 45px;
   height: 45px;
-  position: relative; }
-
-#nav_bar nav a i {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
-
-#nav_bar nav a:hover i {
-  opacity: 0; }
-
-#nav_bar nav a.active,
-#nav_bar nav a:hover {
-  color: #08fdd8; }
-
-#nav_bar nav a:after {
-  content: '';
-  font-size: 9px;
-  position: absolute;
-  bottom: 0px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
-
-#nav_bar nav a:first-child:after {
-  content: 'HOME'; }
-
-#nav_bar nav a:first-child + a:after {
-  content: 'SOBRE'; }
-
-#nav_bar nav a:first-child + a + a:after {
-  content: 'SKILLS'; }
-
-#nav_bar nav a:first-child + a + a + a:after {
-  content: 'TRABALHOS'; }
-
-#nav_bar nav a:first-child + a + a + a + a:after {
-  content: 'CONTATO'; }
-
-#nav_bar nav.pl a:first-child:after {
-  content: 'START'; }
-
-#nav_bar nav.pl a:first-child + a:after {
-  content: 'O MNIE'; }
-
-#nav_bar nav.pl a:first-child + a + a:after {
-  content: 'SKILSY'; }
-
-#nav_bar nav.pl a:first-child + a + a + a:after {
-  content: 'PORTFOLIO'; }
-
-#nav_bar nav.pl a:first-child + a + a + a + a:after {
-  content: 'KONTAKT'; }
-
-#nav_bar nav a:hover:after {
-  opacity: 1; }
+  position: relative;
+  text-decoration: none; }
+  #nav_bar nav a.active, #nav_bar nav a:hover {
+    color: #0af258; }
 
 /*  sociale  */
 #nav_bar ul {
@@ -106,9 +64,62 @@ body {
 #nav_bar ul li a {
   padding: 7px 0;
   display: block;
-  font-size: 15px;
+  font-size: 30px;
   line-height: 16px;
   color: #4d4d4e; }
 
 #nav_bar ul li a:hover {
-  color: #08fdd8; }
+  color: #0af258; }
+
+#page {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+  #page .wrap {
+    width: 100%;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+
+.home {
+  width: 586px;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 30%;
+  margin-left: -243px; }
+  .home h1 {
+    font-family: 'nexa_rust_slabblack_shadow_01';
+    color: #fff;
+    font-size: 36px; }
+    .home h1 span {
+      font-family: 'nexa_rust_extrasfree';
+      font-size: 28px; }
+  .home a.btn {
+    display: block;
+    border: 1px solid #0af258;
+    padding: 10px;
+    font-family: 'bariol_regular';
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px; }
+    .home a.btn:hover {
+      background: #0af258;
+      color: #252627; }
+
+@media (min-width: 1100px) and (min-height: 900px) {
+  .containerr {
+    -webkit-transform: scale(1.2) translate(140px, 45px);
+    -ms-transform: scale(1.2) translate(140px, 45px);
+    transform: scale(1.2) translate(8%, 45px);
+    height: 74%;
+    top: 10%; } }
