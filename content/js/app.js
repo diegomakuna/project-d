@@ -4,7 +4,7 @@
 
 app.config(function($routeProvider){
     $routeProvider
-    .when("/home" ,{
+    .when("/" ,{
         templateUrl:"../app/views/main.html",
         controller:"MainCtrl"
     })
@@ -12,7 +12,11 @@ app.config(function($routeProvider){
         templateUrl:"../app/views/about.html",
         controller:"AboutCtrl"
     })
-    .otherwise({redirect:"/home"});
+    .when("/skills" ,{
+        templateUrl:"../app/views/skills.html",
+        controller:"SkillsCtrl"
+    })
+    .otherwise({redirect:"/"});
 });
 
 

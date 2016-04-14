@@ -74,47 +74,72 @@ body {
 #page {
   width: 100%;
   height: 100%;
-  position: absolute; }
-  #page .wrap {
+  position: absolute;
+  border: 1px solid #f00; }
+  #page section {
     width: 100%;
     height: 90%;
     min-height: 566px;
     position: absolute;
     top: 5%;
-    margin: 0 auto;
     z-index: 1;
+    border: 1px solid #f00;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d; }
+    #page section .home, #page section .about, #page section .skills {
+      top: 170px;
+      position: relative; }
 
-.home {
+#page h1 {
+  font-family: 'nexa_rust_slabblack_shadow_01';
+  color: #fff;
+  font-size: 36px; }
+  #page h1 span {
+    font-family: 'nexa_rust_extrasfree';
+    font-size: 28px; }
+
+#page .home {
   width: 586px;
   text-align: center;
   position: relative;
   left: 50%;
-  top: 30%;
   margin-left: -243px; }
-  .home h1 {
-    font-family: 'nexa_rust_slabblack_shadow_01';
+
+#page a.btn {
+  display: block;
+  border: 1px solid #0af258;
+  padding: 10px;
+  font-family: 'bariol_regular';
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 10px; }
+  #page a.btn:hover {
+    background: #0af258;
+    color: #252627; }
+
+.about {
+  padding: 0 0 0 205px;
+  top: 30%;
+  width: 700px; }
+  .about p {
     color: #fff;
-    font-size: 36px; }
-    .home h1 span {
-      font-family: 'nexa_rust_extrasfree';
-      font-size: 28px; }
-  .home a.btn {
-    display: block;
-    border: 1px solid #0af258;
-    padding: 10px;
-    font-family: 'bariol_regular';
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 150px;
-    margin: 0 auto;
-    border-radius: 10px; }
-    .home a.btn:hover {
-      background: #0af258;
-      color: #252627; }
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.skills .container {
+  width: 900px;
+  margin: 0 auto; }
+  .skills .container .skills-backend, .skills .container .skills-frontend {
+    display: inline-block;
+    width: 446px;
+    color: #fff; }
+  .skills .container h1 {
+    text-align: center; }
+  .skills .container ul {
+    list-style: none; }
 
 @media (min-width: 1100px) and (min-height: 900px) {
   .containerr {
