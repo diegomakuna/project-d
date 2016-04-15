@@ -16,6 +16,14 @@ app.config(function($routeProvider){
         templateUrl:"../app/views/skills.html",
         controller:"SkillsCtrl"
     })
+    .when("/lab" ,{
+        templateUrl:"../app/views/lab.html",
+        controller:"LabCtrl"
+    })
+    .when("/contato" ,{
+        templateUrl:"../app/views/contact.html",
+        controller:"ContactCtrl"
+    })
     .otherwise({redirect:"/"});
 });
 
