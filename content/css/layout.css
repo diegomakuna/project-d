@@ -169,7 +169,8 @@ body {
   width: 32%;
   vertical-align: middle;
   display: table-cell;
-  max-height: 90%; }
+  max-height: 90%;
+  overflow: hidden; }
   .contact .contact-form ul li.half:first-child {
     margin-left: 0; }
   .contact .contact-form ul {
