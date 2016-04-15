@@ -159,7 +159,6 @@ body {
     border: 1px dotted  #0af258; }
 
 .contact {
-  border: 1px solid #f00;
   position: absolute;
   left: 10%;
   top: 50%;
@@ -177,8 +176,17 @@ body {
     padding: 0;
     margin: 0;
     list-style: none; }
+  .contact .contact-form ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    position: relative; }
   .contact .contact-form ul li.half {
-    width: 48%;
+    width: 49%;
     margin-left: 2%;
     float: left;
     clear: none; }
@@ -201,6 +209,25 @@ body {
     padding: 20px;
     box-sizing: border-box;
     min-height: 150px; }
+
+.contact-form .flat-button {
+  color: #0af258;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-family: 'bariol_regular';
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #0af258;
+  float: left;
+  border-radius: 4px;
+  background: transparent;
+  text-transform: uppercase;
+  float: right;
+  text-align: center;
+  margin-right: 10px; }
+  .contact-form .flat-button:hover {
+    background: #0af258;
+    color: #252627; }
 
 @media (min-width: 1100px) and (min-height: 900px) {
   .containerr {
