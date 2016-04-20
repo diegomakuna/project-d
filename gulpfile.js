@@ -40,7 +40,11 @@ gulp.task('sass', function() {
     gulp.src('./content/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./content/css'))
-        .pipe(notify("CSS Sass OK!"));
+        .pipe(notify("CSS Sass OK!"))
+        .on("error", notify.onError({
+            Title:"title",
+            Message:"error"
+        }));
 });
 
 gulp.task('scripts', function () {
