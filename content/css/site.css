@@ -1,5 +1,42 @@
-.teste2 {
+/*http://www.sitepoint.com/architecture-sass-project/*/
+.text-center {
   text-align: center; }
+
+h1 {
+  font-family: "nexa_rust_slabblack_shadow_01";
+  color: #fff;
+  font-size: 36px; }
+
+#page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 1px solid #f00; }
+  #page section {
+    width: 100%;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    border: 1px solid #f00;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d; }
+    #page section .home,
+    #page section .about,
+    #page section .skills {
+      top: 170px;
+      position: relative; }
+
+#page h1 span {
+  font-family: 'nexa_rust_extrasfree';
+  font-size: 28px; }
+
+body {
+  background: #252627;
+  overflow: hidden;
+  display: block; }
 
 @font-face {
   font-family: 'building';
@@ -34,11 +71,20 @@
   font-weight: normal;
   font-style: normal; }
 
-/*http://www.sitepoint.com/architecture-sass-project/*/
-body {
-  background: #252627;
-  overflow: hidden;
-  display: block; }
+.btn {
+  display: block;
+  border: 1px solid #0af258;
+  padding: 10px;
+  font-family: 'bariol_regular';
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 10px; }
+  .btn:hover {
+    background: #0af258;
+    color: #252627; }
 
 /* Menu */
 #nav_bar {
@@ -62,8 +108,7 @@ body {
     #nav_bar .perfil span {
       color: #fff;
       font-family: 'bariol_regular';
-      font-size: 18px;
-      text-align: center; }
+      font-size: 18px; }
 
 /*  Nawigacja  */
 #nav_bar nav {
@@ -108,55 +153,10 @@ body {
 #nav_bar ul li a:hover {
   color: #0af258; }
 
-#page {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 1px solid #f00; }
-  #page section {
-    width: 100%;
-    height: 90%;
-    min-height: 566px;
-    position: absolute;
-    top: 5%;
-    z-index: 1;
-    border: 1px solid #f00;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d; }
-    #page section .home, #page section .about, #page section .skills {
-      top: 170px;
-      position: relative; }
-
-#page h1 {
-  font-family: 'nexa_rust_slabblack_shadow_01';
-  color: #fff;
-  font-size: 36px; }
-  #page h1 span {
-    font-family: 'nexa_rust_extrasfree';
-    font-size: 28px; }
-
-#page .home {
+.home {
   width: 586px;
-  text-align: center;
   position: relative;
-  left: 50%;
-  margin-left: -243px; }
-
-#page a.btn {
-  display: block;
-  border: 1px solid #0af258;
-  padding: 10px;
-  font-family: 'bariol_regular';
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  width: 150px;
-  margin: 0 auto;
-  border-radius: 10px; }
-  #page a.btn:hover {
-    background: #0af258;
-    color: #252627; }
+  margin: 0 auto; }
 
 .about {
   padding: 0 0 0 205px;
@@ -165,18 +165,17 @@ body {
     color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-.skills .container {
+.skills {
   width: 900px;
   margin: 0 auto; }
-  .skills .container .skills-backend, .skills .container .skills-frontend {
+  .skills .skills-backend,
+  .skills .skills-frontend {
     display: inline-block;
     width: 446px;
     color: #fff; }
-  .skills .container h1 {
-    text-align: center; }
-  .skills .container ul {
+  .skills ul {
     list-style: none; }
-    .skills .container ul li {
+    .skills ul li {
       border: 1px dotted #f00;
       width: 100px;
       height: 100px;
@@ -193,7 +192,7 @@ body {
     width: 400px;
     height: 300px;
     margin: 12px;
-    border: 1px dotted  #0af258; }
+    border: 1px dotted #0af258; }
 
 .contact {
   position: absolute;
@@ -227,7 +226,8 @@ body {
     margin-left: 2%;
     float: left;
     clear: none; }
-  .contact .contact-form input[type="text"], .contact .contact-form input[type="email"] {
+  .contact .contact-form input[type="text"],
+  .contact .contact-form input[type="email"] {
     width: 100%;
     border: 0;
     background: #37393b;
@@ -265,14 +265,3 @@ body {
   .contact-form .flat-button:hover {
     background: #0af258;
     color: #252627; }
-
-@media (min-width: 1100px) and (min-height: 900px) {
-  .containerr {
-    -webkit-transform: scale(1.2) translate(140px, 45px);
-    -ms-transform: scale(1.2) translate(140px, 45px);
-    transform: scale(1.2) translate(8%, 45px);
-    height: 74%;
-    top: 10%; } }
-
-.teste {
-  border: 1px salmon; }

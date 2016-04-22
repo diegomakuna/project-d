@@ -1,4 +1,4 @@
-var MainController = function($scope){
-    $scope.test = 'funcionou';
+var SkillController = function($scope){
+   
 }
-app.controller('SkillsCtrl', MainController )
+app.controller('SkillsCtrl', SkillController );

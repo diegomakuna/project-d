@@ -1,12 +1,26 @@
+/*http://www.sitepoint.com/architecture-sass-project/*/
+
+
+// HELPERS
+@import "site/helpers/helpers";
+@import "site/helpers/variables";
+
+//LAYOUT
+
+@import "site/Layout/base"; 
+
 // BASE
-
 @import "site/base/reset";
-@import "site/base/typography"; 
-@import "fonts"; 
-@import "layout"; 
+@import "site/base/typography";
+// COMPONENTS 
+@import "site/components/buttons"; 
+@import "site/components/navigation"; 
 
 
-.teste{
-    border: 1px salmon     
-  
- 
+
+//PAGES
+@import "site/pages/sections"; 
+
+
+
+
