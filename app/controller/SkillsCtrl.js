@@ -1,13 +1,14 @@
 var SkillController = function($scope){
-        $scope.value = 65;
+        $scope.value = 20;
         $scope.options = {
+            readOnly: true,
+            size: 100,
             displayPrevious: true,
-            barCap: 25,
-            trackWidth: 30,
-            barWidth: 20,
-            trackColor: 'rgba(255,0,0,.1)',
-            prevBarColor: 'rgba(0,0,0,.2)',
-            textColor: 'rgba(255,0,0,.6)'
+            bgColor: '#2C3E50',
+            trackWidth: 0,
+            barWidth: 10,
+            barColor: '#0af258',
+            textColor: '#eee'
         };
 };
 app.controller('SkillsCtrl', SkillController );
