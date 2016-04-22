@@ -1,0 +1,132 @@
+
+.home {
+    width: 586px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.about {
+    padding: 0 0 0 205px;
+    width: 700px;
+    p {
+        color: $text-color_a;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+}
+
+.skills {
+        width: 900px;
+        margin: 0 auto;
+        .skills-backend,
+        .skills-frontend {
+            display: inline-block;
+            width: 446px;
+            color: $text-color_a;
+        }
+        ul {
+            list-style: none;
+            li {
+                border: 1px dotted #f00;
+                width: 100px;
+                height: 100px;
+                display: inline-block;
+                margin: 12px;
+            } 
+        }
+  
+}
+
+.lab {
+    width: 1286px;
+    margin: 0 auto;
+    top: 120px;
+    position: relative;
+    .boxlab {
+        display: inline-block;
+        width: 400px;
+        height: 300px;
+        margin: 12px;
+        border: 1px dotted #0af258;
+    }
+}
+
+.contact {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 32%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+    overflow: hidden;
+    .contact-form ul li.half:first-child {
+        margin-left: 0;
+    }
+    .contact-form ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .contact-form ul li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 10px;
+        overflow: hidden;
+        display: block;
+        clear: both;
+        position: relative;
+    }
+    .contact-form ul li.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+        width: 100%;
+        border: 0;
+        background: #37393b;
+        height: 50px;
+        font-size: 16px;
+        color: #8d8d8d;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .contact-form textarea {
+        width: 100%;
+        border: 0;
+        background: #37393b;
+        height: 50px;
+        font-size: 16px;
+        color: #8d8d8d;
+        padding: 20px;
+        box-sizing: border-box;
+        min-height: 150px;
+    }
+}
+
+.contact-form .flat-button {
+    color: #0af258;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-family: 'bariol_regular';
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #0af258;
+    float: left;
+    border-radius: 4px;
+    background: transparent;
+    text-transform: uppercase;
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+    &:hover {
+        background: #0af258;
+        color: #252627
+    }
+}

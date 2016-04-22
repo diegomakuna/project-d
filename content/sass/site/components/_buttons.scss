@@ -1,0 +1,16 @@
+.btn {
+    display: block;
+    border: 1px solid $color_b;
+    padding: 10px;
+    font-family: 'bariol_regular';
+    color: $color_a;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 10px;
+    &:hover {
+        background: $color_b;
+        color: $color_c
+    }
+}
