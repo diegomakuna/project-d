@@ -1,6 +1,6 @@
 
     
- var app =  angular.module('flapperNews', ["ngRoute"]);
+ var app =  angular.module('diegao', ['ngRoute','ui.knob']);
 
 app.config(function($routeProvider){
     $routeProvider

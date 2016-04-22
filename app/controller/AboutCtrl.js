@@ -1,7 +1,7 @@
 var AboutController = function($scope){
     
-}
-app.controller('AboutCtrl', AboutController )
+};
+app.controller('AboutCtrl', AboutController );
 
 
 
