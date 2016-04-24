@@ -1,5 +1,5 @@
 
 var ContactController = function($scope){
-    $scope.test = 'funcionou o about';
+    $scope.navIsActive = "contact";
 };
 app.controller('ContactCtrl', ContactController );

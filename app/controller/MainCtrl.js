@@ -1,4 +1,4 @@
 var MainController = function($scope){
-  
-}
-app.controller('MainCtrl', MainController )
+  $scope.navIsActive = "home";
+};
+app.controller('MainCtrl', MainController );

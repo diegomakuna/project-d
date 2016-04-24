@@ -1,52 +1,27 @@
 <div id="page" ng-controller="SkillsCtrl">
     <section>
-         <div class="skills">
-            
-                 <div class="skills-backend">
-                     <h1 class="text-center">Back end</h1>
-                     <ul>
-                         <li>
-                             <ui-knob value="value" options="options"></ui-knob>
-                            
-                         </li>
-                          <li>
-                             <span>Teclogia</span>
-                         </li>
-                          <li>
-                             <span>Teclogia</span>
-                         </li>
-                          <li>
-                             <span>Teclogia</span>
-                         </li>
-                         <li>
-                             <span>Teclogia</span>
-                         </li>
-                     </ul>
-                       
-                 </div>
-                  <div class="skills-frontend">
-                     <h1 class="text-center">Front end</h1>
-                     <ul>
-                         <li>
-                             <span>Teclogia</span>
-                         </li>
-                          <li>
-                             <span>Teclogia</span>
-                         </li>
-                          <li>
-                             <span>Teclogia</span>
-                         </li>
-                          <li>
-                             <span>Teclogia</span>
-                         </li>
-                         <li>
-                             <span>Teclogia</span>
-                         </li>
-                         
-                     </ul>
-                       
-                 </div>
-          
-         </div>
-     </section>
+        <div class="skills">
+
+            <div class="skills-backend">
+                <h1 class="text-center">Back end</h1>
+                <ul>
+                    <li ng-repeat="item in backend ">
+                        <ui-knob value="item.value" options="options"></ui-knob>
+                        <span class="title-tecnologia text-center">{{item.tecnologia}}</span>
+
+                    </li>
+                </ul>
+
+            </div>
+            <div class="skills-frontend">
+                <h1 class="text-center">Front end</h1>
+                <ul>
+                    <li ng-repeat="item in frontend ">
+                        <ui-knob value="item.value" options="options"></ui-knob>
+                        <span class="title-tecnologia text-center">{{item.tecnologia}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 </div>

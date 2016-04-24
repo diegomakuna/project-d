@@ -1,0 +1,36 @@
+/*  sociale  */
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+footer ul {
+  position: absolute;
+  bottom: 20px;
+  width: 190px;
+  display: block;
+  padding: 0; 
+  list-style: none;
+  text-align: center;
+  
+  left:50%;
+  margin-left: -95px; 
+  li{
+      float: left;
+      padding: 0 10px;
+  }
+}
+
+footer ul li a {
+  padding: 7px 0;
+  display: block;
+  font-size: 30px;
+  line-height: 16px;
+  color: #4d4d4e;
+}
+
+footer ul li a:hover {
+  color: $color_b;
+}

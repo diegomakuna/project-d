@@ -11,46 +11,53 @@
     <script src="content/components/d3/d3.min.js"></script>
     <script src="content/components/ng-knob/dist/ng-knob.min.js"></script>
     <script src="/content/js/app.js"></script>
+    <script src="/app/controller/NavCtrl.js"></script>
     <script src="/app/controller/MainCtrl.js"></script>
     <script src="/app/controller/AboutCtrl.js"></script>
     <script src="/app/controller/SkillsCtrl.js"></script>
     <script src="/app/controller/LabCtrl.js"></script>
     <script src="/app/controller/ContactCtrl.js"></script>
-    
-    
+
+
 </head>
 
 <body ng-app="diegao">
-    
-    <div id="nav_bar">
-       <div class="perfil">
-           <img src="content/img/perfil.jpg" alt="">
-           <span>Diego Oliveira</span>
-     
-       </div>
-        <nav >
-            <a rel="home" href="/" class="home-link active">HOME</a>
-            <a rel="sobre" href="#/sobre" class="">SOBRE</a>
-            <a rel="skills" href="#/skills" class="">SKILLS</a>
-            <a rel="lab" href="#/lab" class="">LAB</a>
-            <a rel="contato" href="#/contato" class="">CONTATO</a>
+
+    <aside id="nav_bar" ng-controller="NavCtrl">
+        <div class="perfil">
+            <img src="content/img/perfil.jpg" alt="">
+            <h5>DIEGO OLIVEIRA
+           <span>Web Developer {{navIsActive}}</span>
+           </h5>
+
+        </div>
+        <ul class="nav {{navIsActive}}">
+            <li class="home-isActive"><a rel="home" href="#/" class="home-link " ng-click="navIsActive='home'">
+                <i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
+            <li class="about-isActive" ><a rel="sobre" href="#/sobre" class=""  ng-click="navIsActive='about'">
+                <i class="fa fa-user-secret" aria-hidden="true"></i>SOBRE</a></li>
+            <li class="skills-isActive"><a rel="skills" href="#/skills" class=""  ng-click="navIsActive='skills'">
+                <i class="fa fa-bolt" aria-hidden="true"></i>SKILLS</a></li>
+            <li class="lab-isActive" ><a rel="lab" href="#/lab" class=""  ng-click="navIsActive='lab'">
+                <i class="fa fa-flask" aria-hidden="true"></i>LAB</a></li>
+            <li class="contact-isActive"><a rel="contato" href="#/contato" class=""  ng-click="navIsActive='contact'">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>CONTATO</a></li>
 
         </nav>
+    </aside>
 
+    <div ng-view>
+
+    </div>
+
+    <footer>
         <ul>
-            <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
             <li><a href="" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
             <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
         </ul>
-
-        
-
-    </div>
-    
-    <div ng-view>
-        
-    </div>
+    </footer>
     {{error}}
 </body>
 
