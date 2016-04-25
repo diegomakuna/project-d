@@ -78,6 +78,8 @@
 #nav_bar .nav.about li.about-isActive a,
 #nav_bar .nav.skills li.skills-isActive a,
 #nav_bar .nav.lab li.lab-isActive a,
-#nav_bar .nav.contact li.contact-isActive a{
+#nav_bar .nav.contact li.contact-isActive a,
+#nav_bar .nav li:hover a
+{
   color: $color_b;
 }
