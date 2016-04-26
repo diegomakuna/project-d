@@ -2,6 +2,10 @@
     width: 586px;
     position: relative;
     margin: 0 auto;
+    h1{
+       line-height: 52px;
+       margin-bottom: 30px;
+    }
 }
 
 .about {
@@ -40,7 +44,7 @@
 .lab {
     width: 1286px;
     margin: 0 auto;
-    top: 120px;
+    
     position: relative;
     .boxlab {
         display: inline-block;
