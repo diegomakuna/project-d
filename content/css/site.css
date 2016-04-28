@@ -9,33 +9,28 @@ body {
 h1 {
   font-family: "nexa_rust_slabblack_shadow_01";
   color: #fff;
-  font-size: 36px; }
+  font-size: 36px;
+  margin-bottom: 12px; }
 
 .content-page {
-  border: 1px solid #f00;
-  margin-left: 160px;
-  padding: 30px;
-  overflow: auto; }
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
   .content-page section {
     width: 100%;
     height: 90%;
     min-height: 566px;
     position: absolute;
-    top: 5%;
-    z-index: 1;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d; }
-    .content-page section .home,
-    .content-page section .about,
-    .content-page section .skills {
-      margin-top: 200px;
+    top: 5%; }
+    .content-page section .sc-center {
+      top: 200px;
+      margin: 0 auto;
       position: relative; }
-
-.content-page:after {
-  content: "";
-  display: block;
-  clear: both; }
+    .content-page section .sc-left {
+      top: 200px;
+      position: absolute;
+      margin: 0 0 0 300px; }
 
 .content-page h1 span {
   font-family: 'nexa_rust_extrasfree';
@@ -218,14 +213,12 @@ body {
 
 .home {
   width: 586px;
-  position: relative;
-  margin: 0 auto; }
+  position: relative; }
   .home h1 {
     line-height: 52px;
     margin-bottom: 30px; }
 
 .about {
-  padding: 0 0 0 205px;
   width: 700px; }
   .about p {
     color: #fff;
@@ -236,11 +229,14 @@ body {
   margin: 0 auto; }
   .skills .skills-backend,
   .skills .skills-frontend {
-    display: inline-block;
-    width: 446px;
+    float: left;
+    width: 375px;
     color: #fff; }
+  .skills .skills-frontend {
+    float: right; }
   .skills ul {
-    list-style: none; }
+    list-style: none;
+    overflow: hidden; }
     .skills ul li {
       width: 100px;
       float: left;
@@ -251,23 +247,17 @@ body {
         padding: 10px 0; }
 
 .lab {
-  width: 1286px;
+  width: 980px;
   margin: 0 auto;
   position: relative; }
   .lab .boxlab {
     display: inline-block;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     margin: 12px;
-    border: 1px dotted #0af258; }
+    background: #0af258; }
 
 section .contact {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
   width: 32%;
   vertical-align: middle;
   display: table-cell;

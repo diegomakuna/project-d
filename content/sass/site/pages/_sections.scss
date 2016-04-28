@@ -1,7 +1,7 @@
 .home {
     width: 586px;
     position: relative;
-    margin: 0 auto;
+    
     h1{
        line-height: 52px;
        margin-bottom: 30px;
@@ -9,7 +9,7 @@
 }
 
 .about {
-    padding: 0 0 0 205px;
+    
     width: 700px;
     p {
         color: $text-color_a;
@@ -22,12 +22,17 @@
     margin: 0 auto;
     .skills-backend,
     .skills-frontend {
-        display: inline-block;
-        width: 446px;
+        float:left;
+        width: 375px;
         color: $text-color_a;
+    }
+    .skills-frontend{
+        float: right;
     }
     ul {
         list-style: none;
+        overflow: hidden;
+       
         li {
             width: 100px;
             float: left;
@@ -42,27 +47,23 @@
 }
 
 .lab {
-    width: 1286px;
+    width: 980px;
     margin: 0 auto;
     
     position: relative;
     .boxlab {
         display: inline-block;
-        width: 400px;
-        height: 300px;
+        width: 300px;
+        height: 200px;
         margin: 12px;
-        border: 1px dotted #0af258;
+        background:  #0af258;
     }
 }
 
 section{
 .contact {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+   
+   
     width: 32%;
     vertical-align: middle;
     display: table-cell;
