@@ -2,6 +2,9 @@
     
  var app =  angular.module('diegao', ['ngRoute','ui.knob']);
 
+
+app.menu = "home";
+
 app.config(function($routeProvider){
     $routeProvider
     .when("/" ,{

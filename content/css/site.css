@@ -10,7 +10,8 @@ h1 {
   font-family: "nexa_rust_slabblack_shadow_01";
   color: #fff;
   font-size: 36px;
-  margin-bottom: 12px; }
+  margin-bottom: 12px;
+  font-weight: lighter; }
 
 .content-page {
   overflow: auto;
@@ -37,40 +38,6 @@ h1 {
   font-size: 28px; }
 
 /*  sociale  */
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 2; }
-
-footer ul {
-  position: absolute;
-  bottom: 20px;
-  width: 190px;
-  display: block;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  left: 50%;
-  margin-left: -95px; }
-  footer ul li {
-    float: left;
-    padding: 0 10px; }
-
-footer ul li a {
-  padding: 7px 0;
-  display: block;
-  font-size: 30px;
-  line-height: 16px;
-  color: #4d4d4e; }
-
-footer ul li a:hover {
-  color: #0af258; }
-
-* {
-  margin: 0px;
-  padding: 0px; }
-
 body {
   background: #252627;
   overflow: hidden;
@@ -181,8 +148,7 @@ body {
   display: block;
   position: absolute;
   height: 210px;
-  top: 50%;
-  margin-top: -120px;
+  margin-top: 65px;
   width: 100%;
   padding: 0;
   list-style: none;
@@ -204,12 +170,27 @@ body {
     text-align: center;
     position: relative; }
 
-#nav_bar .nav.home li.home-isActive a,
-#nav_bar .nav.about li.about-isActive a,
-#nav_bar .nav.skills li.skills-isActive a,
-#nav_bar .nav.lab li.lab-isActive a,
-#nav_bar .nav.contact li.contact-isActive a {
+#nav_bar .nav li.active a {
   color: #0af258; }
+
+ul.social {
+  position: absolute;
+  bottom: 20px;
+  width: 190px;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  ul.social li {
+    float: left;
+    padding: 0 10px; }
+    ul.social li a {
+      padding: 7px 0;
+      display: block;
+      font-size: 20px;
+      color: #4d4d4e; }
+      ul.social li a:hover {
+        color: #0af258; }
 
 .home {
   width: 586px;
@@ -236,7 +217,8 @@ body {
     float: right; }
   .skills ul {
     list-style: none;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 0px; }
     .skills ul li {
       width: 100px;
       float: left;
@@ -247,7 +229,7 @@ body {
         padding: 10px 0; }
 
 .lab {
-  width: 980px;
+  width: 981px;
   margin: 0 auto;
   position: relative; }
   .lab .boxlab {
@@ -258,7 +240,7 @@ body {
     background: #0af258; }
 
 section .contact {
-  width: 32%;
+  width: 500px;
   vertical-align: middle;
   display: table-cell;
   max-height: 90%;
@@ -292,7 +274,8 @@ section .contact {
     font-size: 16px;
     color: #8d8d8d;
     padding: 0 20px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    font-family: "HelveticaNeueLTStdCnRegular"; }
   section .contact .contact-form textarea {
     width: 100%;
     border: 0;
@@ -302,23 +285,23 @@ section .contact {
     color: #8d8d8d;
     padding: 20px;
     box-sizing: border-box;
-    min-height: 150px; }
+    min-height: 150px;
+    font-family: "HelveticaNeueLTStdCnRegular"; }
 
 .contact-form .btn {
-  color: #0af258;
   font-size: 12px;
-  letter-spacing: 3px;
-  font-family: 'bariol_regular';
+  font-family: "HelveticaNeueLTStdCnRegular";
   text-decoration: none;
   padding: 8px 10px;
-  border: 1px solid #0af258;
   float: left;
   border-radius: 4px;
   background: transparent;
   text-transform: uppercase;
   float: right;
   text-align: center;
-  margin-right: 10px; }
+  margin-right: 10px;
+  letter-spacing: 4px;
+  font-weight: bold; }
   .contact-form .btn:hover {
     background: #0af258;
     color: #252627; }

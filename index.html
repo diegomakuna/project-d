@@ -5,6 +5,7 @@
     <title></title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="" href="content/components/normalize-css/normalize.css">
     <link href="content/css/site.css" rel="stylesheet">
     <script src="content/components/angular/angular.min.js"></script>
     <script src="content/components/angular-route/angular-route.min.js"></script>
@@ -27,37 +28,37 @@
         <div class="perfil">
             <img src="content/img/perfil.jpg" alt="">
             <h5>DIEGO OLIVEIRA
-           <span>Web Developer {{navIsActive}}</span>
+           <span>Web Developerr  {{menu}} </span>
            </h5>
-
+     
         </div>
-        <ul class="nav {{navIsActive}}">
-            <li class="home-isActive"><a rel="home" href="#/" class="home-link " ng-click="navIsActive='home'">
+        
+            
+        <nav class="nav">
+            <li ng-class="getClass('/home');" ><a rel="home" href="#/" class="home-link " ng-click="getClass('/home')">
                 <i class="fa fa-home" aria-hidden="true"></i>HOME</a></li>
-            <li class="about-isActive" ><a rel="sobre" href="#/sobre" class=""  ng-click="navIsActive='about'">
+            <li ng-class="getClass('/sobre');"> <a rel="sobre" href="#/sobre" class=""  ng-click="getClass('/about')">
                 <i class="fa fa-user-secret" aria-hidden="true"></i>SOBRE</a></li>
-            <li class="skills-isActive"><a rel="skills" href="#/skills" class=""  ng-click="navIsActive='skills'">
+            <li ng-class="getClass('/skills');"><a rel="skills" href="#/skills" class=""  ng-click="getClass('/skills')">
                 <i class="fa fa-bolt" aria-hidden="true"></i>SKILLS</a></li>
-            <li class="lab-isActive" ><a rel="lab" href="#/lab" class=""  ng-click="navIsActive='lab'">
+            <li ng-class="getClass('/lab');"><a rel="lab" href="#/lab" class=""  ng-click="getClass('/lab')">
                 <i class="fa fa-flask" aria-hidden="true"></i>LAB</a></li>
-            <li class="contact-isActive"><a rel="contato" href="#/contato" class=""  ng-click="navIsActive='contact'">
+            <li ng-class="getClass('/contato');"><a rel="contato" href="#/contato" class=""  ng-click="getClass('/contato')">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>CONTATO</a></li>
 
         </nav>
-    </aside>
-
-    <div class="content-page" ng-view>
-
-    </div>
-
-    <footer>
-        <ul>
+        <ul class="social">
             <li><a href="" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
             <li><a href="" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
             <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
             <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
         </ul>
-    </footer>
+    </aside>
+
+    <div class="content-page" ng-view>
+
+    </div>
+    
     {{error}}
 </body>
 

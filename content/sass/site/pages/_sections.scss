@@ -32,6 +32,8 @@
     ul {
         list-style: none;
         overflow: hidden;
+        padding: 0px;
+        
        
         li {
             width: 100px;
@@ -47,7 +49,7 @@
 }
 
 .lab {
-    width: 980px;
+    width: 981px;
     margin: 0 auto;
     
     position: relative;
@@ -64,7 +66,7 @@ section{
 .contact {
    
    
-    width: 32%;
+    width:500px;
     vertical-align: middle;
     display: table-cell;
     max-height: 90%;
@@ -103,6 +105,7 @@ section{
         color: #8d8d8d;
         padding: 0 20px;
         box-sizing: border-box;
+        font-family: $menu-font;
     }
     .contact-form textarea {
         width: 100%;
@@ -114,18 +117,19 @@ section{
         padding: 20px;
         box-sizing: border-box;
         min-height: 150px;
+        font-family: $menu-font;
+        
     }
 }
 }
 
 .contact-form .btn {
-    color: #0af258;
+  
     font-size: 12px;
-    letter-spacing: 3px;
-    font-family: 'bariol_regular';
+    font-family: $menu-font;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #0af258;
+    
     float: left;
     border-radius: 4px;
     background: transparent;
@@ -133,8 +137,11 @@ section{
     float: right;
     text-align: center;
     margin-right: 10px;
+    letter-spacing: 4px;
+    font-weight: bold;
     &:hover {
-        background: #0af258;
+        background: $color_b;
         color: #252627
     }
 }
+
