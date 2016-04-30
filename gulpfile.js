@@ -56,9 +56,9 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(paths.css, ['sass', browserSync.reload]);
+    gulp.watch(paths.css, ['sass']);
     //gulp.watch(paths.scripts, ['scripts', browserSync.reload]);
    // gulp.watch(paths.html, ['', browserSync.reload]);
 });
 
-gulp.task('default', ['watch', 'sass', 'scripts', 'browser-sync']);
+gulp.task('default', ['watch', 'sass', 'scripts']);
