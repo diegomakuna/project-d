@@ -1,0 +1,12 @@
+npm init -y
+
+npm install webpack webpack-cli --save-dev
+
+mkdir src 
+
+// create new file index.js
+
+npm install react react-dom -S
+npm install babel-core babel-loader babel-preset-env babel-preset-react -D
+npm install html-webpack-plugin -D
+npm install webpack-dev-server -D
