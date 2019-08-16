@@ -1,77 +1,40 @@
+
+$font-title: 'Muli', sans-serif;
+$font-text: 'Montserrat', sans-serif;
+
 body {
-    background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+    background: #1f2329; //linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
     background-size: 300% 300%;
     -webkit-animation: Background 25s ease infinite;
     -moz-animation: Background 25s ease infinite;
     animation: Background 25s ease infinite;
+    padding: 0px;
+    margin: 0px;
+    font-family: $font-text
   }
   
   .full-screen {
+
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+
+  }
+  
+  .sidebar{
     position: fixed;
     top: 0;
-    right: 0;
     bottom: 0;
     left: 0;
-  //you need to setup file-loader in webpack before you can use images
-    background: url("../assests/image/IronMan.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    //_ works with row or column_
-  
-    flex-direction: column;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  h1 {
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 800;
-    font-size: 4em;
-    letter-spacing: -2px;
-    text-align: center;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.6);
-  
-    &:after {
-      display: block;
-      color: #fff;
-      letter-spacing: 1px;
-      font-family: "Poiret One", sans-serif;
-      content: "React project powered by webpack and babel with support for sass";
-      font-size: 0.4em;
-      text-align: center;
+    width: 256px;
+    transition: all .3s ease;
+    .nav{
+        font-family: $font-title
     }
   }
-  
-  .button-line {
-    font-family: "Open Sans", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    text-align: center;
-    font-size: 1.4em;
-    opacity: 0.8;
-    padding: 20px 40px;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    margin: 0 auto;
-    display: block;
-  
-    &:hover {
-      opacity: 1;
-      background-color: #fff;
-      color: grey;
-    }
+  .d28-wrapper{
+      background: #2b3138;
   }
   
   @-webkit-keyframes Background {

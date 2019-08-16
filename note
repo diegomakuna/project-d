@@ -8,7 +8,7 @@ mkdir src
 
 
 npm install babel-core babel-loader babel-preset-env babel-preset-react -D  // npm i @babel/core babel-loader @babel/preset-env --save-dev
-npm i react react-dom --save-dev
+npm i react react-dom react-router react-router-dom --save-dev
 npm i @babel/preset-react --save-dev
 npm i html-webpack-plugin html-loader --save-dev
 

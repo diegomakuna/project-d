@@ -1,23 +1,21 @@
-import React from "react";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { browserHistory } from 'react-router';
+
+import SideBar from './Sidebar/SideBar';
+import HomePage from './Home/Home';
 import "./app.scss";
 
 const App = () => {
   return (
-    <div className="full-screen">
-      <div>
-        <h1>
-          React Page {" "}
-        </h1>
-        <br />
-        <a
-          className="button-line"
-          href="https://github.com/deityhub"
-          target="_blank"
-        >
-          Know more now
-        </a>
+    <Router>
+  
+      <SideBar />
+      <div className="d28-wrapper">
+      <Route name="home" exact path="/" component={HomePage} />
       </div>
-    </div>
+   
+  </Router>
   );
 };
 
