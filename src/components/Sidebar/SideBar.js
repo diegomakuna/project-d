@@ -15,7 +15,7 @@ class SideBar extends Component {
         </div>
         <nav className="nav">
           <li>
-            <a rel="home" href="#/" className="home-link ">
+            <a rel="home" href="/" className="home-link ">
               <i className="fa fa-home" aria-hidden="true" />Home
             </a>
           </li>

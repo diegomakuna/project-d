@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 
 import SideBar from './Sidebar/SideBar';
 import HomePage from './Home/Home';
+import AboutPage from './About/About';
 import "./app.scss";
 
 const App = () => {
@@ -11,8 +12,13 @@ const App = () => {
     <Router>
   
       <SideBar />
-      <div className="d28-wrapper">
+      <div className="d28-wrapper left ">
+        <div className="container">
+      <Switch> 
       <Route name="home" exact path="/" component={HomePage} />
+      <Route name="about" exact path="/sobre" component={AboutPage} />
+      </Switch>
+      </div>
       </div>
    
   </Router>

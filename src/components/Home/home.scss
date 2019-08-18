@@ -1,0 +1,19 @@
+.section-home {
+    position: relative;
+    align-self: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    .container-section{
+        max-width: 500px;
+        align-self: center;
+        border: 1px solid #f00;
+        
+    h1{
+       line-height: 52px;
+       margin-bottom: 30px;
+    }
+}
+}

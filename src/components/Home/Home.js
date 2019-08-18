@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import "./home.scss";
 class Home extends Component {
     render(){
         return(
-            <div>
-                HOme
+            <div className="section-home">
+                <div className="container-section">
+                HOme jhkjhkhkjhdfkjhasdkjfhasdlhfashfdhasfkjhasdfkhasdhfldhasflkhasdfkljhasdhfkdhasfkdashkjfashdj
+            </div>
             </div>
         )
     }
