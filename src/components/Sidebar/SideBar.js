@@ -1,8 +1,19 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import {
+  Route,
+  NavLink,
+  BrowserRouter as Router,
+  Switch,
+} from 'react-router-dom'
+import PropTypes from "prop-types";
+import { withRouter } from "react-router";
 import perfil from '../../assests/image/perfil.jpg';
 import "./sidebar.scss";
 class SideBar extends Component {
+  getNavLinkClass = (path) => {
+   
+    return this.props.location.pathname === path ? 'active' : '';
+  }
   render() {
     return (
       <div className="sidebar">
@@ -14,16 +25,16 @@ class SideBar extends Component {
           </h5>
         </div>
         <nav className="nav">
-          <li>
-            <Link rel="home" to="/" className="home-link ">
-              <i className="fa fa-home" aria-hidden="true" />Home
-            </Link>
+          <li className={this.getNavLinkClass("/")}>
+            <NavLink exact   rel="home" to="/" activeClassName="active" >
+              <i className="fa fa-home" />Home
+            </NavLink>
           </li>
-          <li>
+          <li className={this.getNavLinkClass("/sobre")}>
            
-            <Link rel="sobre" to="/sobre" className="">
-              <i className="fa fa-user-secret" aria-hidden="true" />Sobre
-            </Link>
+            <NavLink activeClassName="active"  rel="sobre" to="/sobre" className="">
+              <i className="fa fa-user-secret" />Sobre
+            </NavLink>
           </li>
           <li>
             <a rel="skills" href="#/skills" className="">
@@ -45,4 +56,5 @@ class SideBar extends Component {
     );
   }
 }
+SideBar = withRouter(SideBar)
 export default SideBar;
