@@ -15,15 +15,15 @@ class SideBar extends Component {
         </div>
         <nav className="nav">
           <li>
-            <a rel="home" href="/" className="home-link ">
+            <Link rel="home" to="/" className="home-link ">
               <i className="fa fa-home" aria-hidden="true" />Home
-            </a>
+            </Link>
           </li>
           <li>
            
-            <a rel="sobre" href="#/sobre" className="">
+            <Link rel="sobre" to="/sobre" className="">
               <i className="fa fa-user-secret" aria-hidden="true" />Sobre
-            </a>
+            </Link>
           </li>
           <li>
             <a rel="skills" href="#/skills" className="">
