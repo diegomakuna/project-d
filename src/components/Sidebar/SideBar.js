@@ -36,20 +36,20 @@ class SideBar extends Component {
               <i className="fa fa-user-secret" />Sobre
             </NavLink>
           </li>
-          <li>
-            <a rel="skills" href="#/skills" className="">
+          <li className={this.getNavLinkClass("/skills")}>
+            <NavLink activeClassName="active" rel="skills" to="/skills" className="">
               <i className="fa fa-bolt" aria-hidden="true" />Skills
-            </a>
+            </NavLink>
           </li>
-          <li>
-            <a rel="lab" href="#/lab" className="">
+          <li className={this.getNavLinkClass("/lab")}>
+            <NavLink activeClassName="active" rel="lab" to="/lab" className="">
               <i className="fa fa-flask" aria-hidden="true" />Lab
-            </a>
+            </NavLink>
           </li>
-          <li>
-            <a rel="contato" href="#/contato" className="">
-              <i className="fa fa-envelope-o" aria-hidden="true" />Contato
-            </a> 
+          <li className={this.getNavLinkClass("/contact")}>
+            <NavLink activeClassName="active" rel="contact" to="/contact" className="">
+              <i className="fa fa-envelope-o" aria-hidden="true" />Contact
+            </NavLink>
           </li>
         </nav>
       </div>
