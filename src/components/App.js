@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { browserHistory } from 'react-router';
 
 import Header from './Header/Header';
+import Footer from './Footer/footer';
 import HomePage from './Home/Home';
 import AboutPage from './About/About';
 import SkillsPage from './Skills/Skills';
@@ -28,8 +29,8 @@ const App = () => {
       {/* </Switch>
       </div>
       </div> */}
-   
-  </Router>
+    <Footer />
+    </Router>
   );
 };
 

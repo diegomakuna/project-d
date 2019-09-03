@@ -1,6 +1,69 @@
-.header{
+.header {
+    padding: 30px;
+    display: flex;
     border: 1px solid #f00;
     height: 70px;
     font-family: 'Morganite-Light';
     
+    .logo{
+        color:#fff;
+        width: 155px;
+        text-align: center;
+        position: absolute;
+        padding: 2px;
+       
+        
+    h1{
+       font-family: 'Morganite-Light';
+       font-size: 38px;
+       letter-spacing: 3px;
+       margin: 0;
+       padding: 0;
+       text-transform: uppercase;
+       line-height: 35px;
+       text-shadow: #fff 0px -2px -2px;
+       
+    }
+    span.subtitle{
+        font-size: 28px;
+        font-family: "Morganite-Thin";
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-shadow: #fff 0px 0px 1px;
+        
+        
+    }
+}
+ 
+    .nav{
+        
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        font-size: 40px;
+        margin: 0px;
+        font-family: "Morganite-ExtraLightItalic";
+        
+        a{
+            display: block;
+            text-decoration: none;
+            color:#fff;
+            padding: 0 10px;
+            letter-spacing: 4px;
+           
+            &:hover{
+                color: #f00;
+            }
+        }
+    }
+
+  
+
 }

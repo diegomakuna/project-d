@@ -8,6 +8,21 @@ class Header extends Component {
                 <h1 class="text-center">Diego Araujo</h1>
                <span className="subtitle"> Web Developer </span>
                </div>
+               <div class="nav">
+                    <div class="nav-container">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SKILLS</a></li>
+                        <li><a href="#">LABS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                    </div>
+               </div>
+               <div class="header-right">
+
+               </div>
+              
             </div>
         )
     }
