@@ -7,7 +7,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <ul class="footer-links">
+        <ul className="footer-links">
           <li>
             <a href="#">
               <FontAwesomeIcon icon={faLinkedin} /> 
@@ -19,9 +19,9 @@ class Footer extends Component {
             </a>
           </li>
         </ul>
-        <div class="powredby">
-            <span class="text">powred <br/>by</span>
-            <span class="year">2019</span>
+        <div className="powredby">
+            <span className="text">powred by<br/>Diego</span>
+            <span className="year">2019</span>
         </div>
       </div>
     );

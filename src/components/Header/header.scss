@@ -1,7 +1,6 @@
 .header {
     padding: 30px;
     display: flex;
-    border: 1px solid #f00;
     height: 70px;
     font-family: 'Morganite-Light';
     
@@ -50,7 +49,9 @@
         font-size: 40px;
         margin: 0px;
         font-family: "Morganite-ExtraLightItalic";
-        
+        li.active a{
+            color: #f00;
+        }
         a{
             display: block;
             text-decoration: none;
@@ -58,10 +59,11 @@
             padding: 0 10px;
             letter-spacing: 4px;
            
-            &:hover{
+             &:hover{
                 color: #f00;
             }
         }
+
     }
 
   

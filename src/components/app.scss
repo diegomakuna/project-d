@@ -163,79 +163,8 @@ body {
     flex-direction: column;
     height: 100%;
   }
-  #app{
-    height: 100%;
+  .wrapper{
+    border:1px solid #f00;
   }
-  
-  .full-screen {
 
-     width: 100%;
-     height: 100%;
-     display: flex;
-     flex-direction: column;
-     flex: 1;
-
-  }
   
-  .sidebar{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 256px;
-    transition: all .3s ease;
-    .nav{
-        font-family: $font-title
-    }
-  }
-  .d28-wrapper{
-      &.left{
-        padding-left: 276px; 
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-      }
-      .container{
-        flex: 1 auto;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-      }
-  }
-  
-  
-  @-webkit-keyframes Background {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  @-moz-keyframes Background {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  @keyframes Background {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }

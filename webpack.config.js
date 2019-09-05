@@ -43,6 +43,9 @@ module.exports = {
        }
       ]
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   devtool: 'source-map',
   plugins: [
     new HtmlWebPackPlugin({
@@ -53,5 +56,6 @@ module.exports = {
       filename: "[name].css",
       chunkFilename: "[id].css"
     })
+  
   ]
 };

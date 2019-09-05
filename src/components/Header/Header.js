@@ -1,25 +1,37 @@
 import React, { Component } from "react";
 import "./header.scss";
+import { NavLink, BrowserRouter as Router, }  from 'react-router-dom'
+import { withRouter } from "react-router";
 class Header extends Component {
+    getNavLinkClass = (path) => {
+   
+        return this.props.location.pathname === path ? 'active' : '';
+      }
     render() {
         return (
             <div className="header">
-                    <div class="logo">
-                <h1 class="text-center">Diego Araujo</h1>
+                    <div className="logo">
+                <h1 className="text-center">Diego Araujo</h1>
                <span className="subtitle"> Web Developer </span>
                </div>
-               <div class="nav">
-                    <div class="nav-container">
+               <div className="nav">
+                    <div className="nav-container">
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">SKILLS</a></li>
-                        <li><a href="#">LABS</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li className={this.getNavLinkClass("/")}>
+                            <NavLink exact rel="home" to="/"  >HOME</NavLink>
+                        </li>
+                        <li className={this.getNavLinkClass("/sobre")}>
+                        <NavLink   rel="sobre" to="/sobre">ABOUT</NavLink></li>
+                        <li className={this.getNavLinkClass("/skills")}>
+                            <NavLink   rel="skills" to="/skills" >SKILLS</NavLink></li>
+                        <li className={this.getNavLinkClass("/labs")}>
+                            <NavLink   rel="labs" to="/labs">LABS</NavLink></li>
+                        <li className={this.getNavLinkClass("/contact")}>
+                            <NavLink   rel="contact" to="/contact">CONTACT</NavLink></li>
                     </ul>
                     </div>
                </div>
-               <div class="header-right">
+               <div className="header-right">
 
                </div>
               
@@ -28,4 +40,5 @@ class Header extends Component {
     }
 
 }
+Header = withRouter(Header)
 export default Header;

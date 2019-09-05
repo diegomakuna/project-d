@@ -17,21 +17,21 @@ const App = () => {
     <Router>
 
        <Header />
-      {/* <SideBar />
-      <div className="d28-wrapper left ">
-        <div className="container">
+     
+      
+        <div className="wrapper">
       <Switch> 
       <Route name="home" exact path="/" component={HomePage} />
       <Route name="about" path="/sobre" component={AboutPage} />
       <Route name="skills" path="/skills" component={SkillsPage} />
       <Route name="lab" path="/lab" component={LabPage} />
       <Route name="Contact" path="/contact" component={ContactPage} /> */}
-      {/* </Switch>
+       </Switch>
       </div>
-      </div> */}
+     
     <Footer />
     </Router>
   );
-};
+}; 
 
 export default App;

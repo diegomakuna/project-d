@@ -5,13 +5,13 @@ class Home extends Component {
         return(
             <div className="section-home">
                 <div className="container-section">
-                    <div class="logo">
-                <h1 class="text-center">Diego Araujo</h1>
+                    <div className="logo">
+                <h1 className="text-center">Diego Araujo</h1>
                <span className="subtitle"> Web Developer </span>
                </div>
           
               
-            <a href="" class="btn text-center">Contato</a>
+            <a href="" className="btn text-center">Contato</a>
            
             </div>
             </div>
