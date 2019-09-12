@@ -163,8 +163,30 @@ body {
     flex-direction: column;
     height: 100%;
   }
-  .wrapper{
-    border:1px solid #f00;
+  .full-screen{
+    height: 100%;
   }
+  .appflex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .wrapper{
+      border:1px solid #f00;
+      flex-grow: 1;
+      flex-basis: auto;
+      .container{
+        height:100%; 
+      }
+    }  
+  
+  }
+  .container{
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 1px dotted #f00;
+  }
+  
+
+ 
 
   

@@ -1,1 +1,43 @@
+.section-home{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    .home-container{
+        border:1px solid #f00; 
+        align-self: center;
+        width: 1000px;
+        height: 500px; 
+        position: relative; 
+    }
+    .imagebox{
+        display:block;
+        border:1px solid #f00; 
+        float: left;
+        height: 100%;
+        
+    }
+    .img-0{
+        width: 200px;
+        margin: 0 20px 0 0;
+    }
+    .img-1{
+        width: 250px;
+        margin: 0 20px 0 0;
+    }
+    .img-2{
+        width: 400px;
+        margin: 0 20px 0 0;
+    }
 
+    .intro-text{
+        position: absolute;
+        right: 0;
+        color: #fff;
+        font-family: "Morganite-Thin";
+        font-size: 100px;
+        line-height: 85px;
+
+    }
+}

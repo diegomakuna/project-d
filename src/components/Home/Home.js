@@ -4,16 +4,25 @@ class Home extends Component {
     render(){
         return(
             <div className="section-home">
-                <div className="container-section">
-                    <div className="logo">
-                <h1 className="text-center">Diego Araujo</h1>
-               <span className="subtitle"> Web Developer </span>
-               </div>
-          
-              
-            <a href="" className="btn text-center">Contato</a>
-           
-            </div>
+                <div className="home-container">
+                    <div className="imagebox img-0">1</div>
+                    <div className="imagebox img-1">1</div>
+                    <div className="imagebox img-2">3</div>
+                    <div className="intro-text">
+                        <div className="text-0">
+                            WITH GREAT
+                        </div>
+                        <div className="text-1">
+                            POWER,
+                        </div>
+                        <div className="text-2">
+                            COME GREAT
+                        </div>
+                        <div className="text-3">
+                            RESPONSABILITY
+                        </div>
+                    </div>
+                </div> 
             </div>
         )
     }
