@@ -1,0 +1,35 @@
+.section-about{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    .about-container{
+       
+        align-self: center;
+        width: 1100px;
+        height: 445px; 
+        position: relative; 
+        border: 1px solid #f00;
+        display: flex;
+        .image-about{
+            width: 459px;
+            height: 411px;
+            background: url(../../assests/image/about/img-about.jpg) #f00;
+            color: #fff;
+        }
+        .since-text{
+            transform: rotate(-90deg);
+            border:1px solid #f00;
+            height: 50px;
+            font-family: 'Morganite-ExtraLight';
+            font-size: 60px;
+            letter-spacing: 5px;
+            color: #fff;
+        }
+        .description-container{
+            width: 513px;
+        }
+
+    }
+}

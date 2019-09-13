@@ -1,5 +1,5 @@
 .footer{
-    position: fixed;
+    
     bottom: 0px;
     width: 100%;
     
@@ -8,7 +8,7 @@
     justify-content: space-between;
    
     .footer-links{
-        padding: 30px;
+        padding: 20px 30px;
         font-size: 20px;
         list-style: none;
         margin: 0px;
@@ -20,7 +20,7 @@
         }
     }
     .powredby{
-        padding: 30px;
+        padding: 20px 30px;
         display: flex;
         .text{
             
