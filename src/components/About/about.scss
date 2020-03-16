@@ -1,42 +1,130 @@
 .section-about{
-    
     position: fixed;
-    background-color: #000;
-    top:0;
-    left: 0;
-    width: 60%;
-    height: 100%;
+    width: 100%;
+     height: 100%;
+    .about-left{
+        position: fixed;
+        background-color: #000;
+        top:0;
+        left: 0;
+        width: 65%;
+        height: 100%;
+        z-index: 2;
     .about-container{
-       
-        width: 100%;
+      
+        width: 810px;
+        right: -124px;
         height: 500px; 
-        position: relative; 
+        position: absolute; 
         top:130px;
-        border: 1px solid #f00;
-        padding: 0 0 0 10%;
-       
-        .image-about{
-            width: 459px;
-            height: 411px;
-            background: url(../../assests/image/about/img-about.jpg) #f00;
+        
+        display:flex;
+        justify-content:space-between;
+      
+        .description-container{
+            width: 420px;
+            padding-right: 25px;
             color: #fff;
-        }
+            font-family:  'Montserrat', sans-serif;
+            position: relative;
+            padding-right: 50px;
+            
+            
         .since-text{
             transform: rotate(-90deg);
-            border:1px solid #f00;
             height: 50px;
             font-family: 'Morganite-ExtraLight';
             font-size: 60px;
-            letter-spacing: 5px;
+            letter-spacing: 17px;
             color: #fff;
-            width: 160px;
+            top: 139px;
+            left: -183px;
+            position: absolute;
         }
-        .description-container{
-            width: 513px;
-            color: #fff;
-            font-family:  'Montserrat', sans-serif;
+            h2{
+                font-size:24px;
+                margin-top: 0px;
+            }
+            p{
+                font-size:14px;
+                
+            }
+           
+             
+        }
+        .timeline{
+            width:250px;
+            
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                color: #fff;
+                li{
+                    
+                    width: 102px;
+                    position: relative;
+                    padding-right: 24px;
+                    margin-bottom: 25px;
+                }
+                .job{
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border: 2px solid #fff;
+                    background-color: #fff;
+                    border-radius: 100%;
+                    top: 40%;
+                    right: -5px;
+                    z-index: 99;
+                }
+                span{
+                    display: block;
+                    font-size: 12px;
+                    padding: 2px 0px;
+                    font-weight: bold;
+                   
+                }
+                .company{
+                    letter-spacing: 3px;
+                }
+                .office{
+                    background:#fff;
+                    color: #000;
+                    letter-spacing: 2.7px;
+                    text-transform: uppercase;
+                }
+                .years{
+                    background: #000;
+                    position: absolute;
+                    top:16%;
+                    right: -95%;
+                    padding: 2px 5px;
+                    font-size: 30px;
+                    letter-spacing: 2.5px;
+                    font-family: "Morganite-ExtraLight";
+                    font-weight: 400;
+                    
+                    
+                }
+            }
+            }
             
         }
 
+    }
+}
+    .about-right{
+        background-image: url(./../../assests//image/about/img-about.jpg);
+        background-size: cover;
+        position: fixed; 
+        top:0;
+        right: 0;
+        width: 35%;
+        height: 100%;
+        z-index: 1;
+        
     }
 }
