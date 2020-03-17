@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faComment } from '@fortawesome/free-solid-svg-icons'
 import "./about.scss";
+
+
 
 class About extends Component {
     render(){
@@ -59,11 +63,10 @@ class About extends Component {
                                     <span className="years">2015 - 2020 </span>
                                  </div>
                              </li>
-                             <li>
+                             <li className="next">
                                  <div className="job">
-                                    <span className="company">NEXT?</span>
-                                    <span className="office">wanna work together?</span>
-                                    <span className="years">Contact me now</span>
+                                 <FontAwesomeIcon icon={faComment} className="icon-message" />
+                                    <a href="#">   NEXT? <br />  wanna work together? <br/> Contact me now</a>
                                  </div>
                              </li>
                          </ul>

@@ -12,12 +12,12 @@
         z-index: 2;
     .about-container{
       
-        width: 810px;
+        width: 750px;
         right: -124px;
         height: 500px; 
         position: absolute; 
-        top:130px;
-        
+        // top:130px;
+        top:25%;
         display:flex;
         justify-content:space-between;
       
@@ -126,5 +126,44 @@
         height: 100%;
         z-index: 1;
         
+    }
+    .next{
+        
+        width: 80% !important;
+        left: 10%;
+        text-align: center;
+        margin-top: 40px !important;
+        padding: 0px  0px !important;
+        background-color: green($color: #000000);
+
+        .job{
+            &:before{
+                display: none;
+        }
+        .icon-message{
+            
+            font-size: 26px;
+            background: #000;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        a{
+            font-size: 12px !important;
+            display: block;
+            color: #fff !important;
+            background: #000 !important;
+            text-decoration: none;
+            padding: 10px;
+
+            border-radius: 30px;    
+
+            &:hover{
+                color: #000 !important;
+                background: #fff !important;
+                font-weight: bold;
+            }
+        }
+
+       }
     }
 }

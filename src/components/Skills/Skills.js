@@ -7,7 +7,21 @@ class Skills extends Component {
         return(
             <div className="section-skills">
                 <div className="container-section">
-                Skills
+                <div className="front-container">
+                    <h2>FRONT</h2>
+                    <ul>
+                        <li>
+                            <h4>html</h4>
+                            <div className="percent">
+                                <div className="parcent-count"></div>
+                                <div className="parcent-background"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div className="back-container">
+                <h2>BACK</h2>
+                </div>
             </div>
             </div>
         )

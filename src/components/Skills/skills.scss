@@ -1,0 +1,61 @@
+.section-skills{
+   
+}
+
+.section-skills .container-section {
+    display: flex;
+    background-color:red;
+    width: 100%;
+    height: 100%;
+    .front-container{
+        background-color:#ff0;
+        flex-grow: 1;
+        li{
+            width: 304px;
+         h4{
+            text-align: right;
+        }
+    }
+        ul{
+            list-style: none;
+            border: 1px solid #f00;
+            
+        }
+    
+    }
+    .back-container{
+        background-color:green; 
+        flex-grow: 1;
+    }
+    h2{
+        font-family: 'Morganite-Black';
+        font-size: 170px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .percent{
+        
+        height: 7px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        .parcent-count{
+            position: absolute;
+            right: 0;
+            border-radius: 15px;
+            width: 90%;
+            height: 100%;
+            background-image: linear-gradient(to right, #0324fe , #fc009d );
+            z-index: 2;
+        }
+        .parcent-background{
+            background-color: #b7b7b7;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.4;
+        }
+    }
+}
