@@ -24,8 +24,8 @@ class Header extends Component {
                         <NavLink   rel="sobre" to="/sobre">ABOUT</NavLink></li>
                         <li className={this.getNavLinkClass("/skills")}>
                             <NavLink   rel="skills" to="/skills" >SKILLS</NavLink></li>
-                        <li className={this.getNavLinkClass("/labs")}>
-                            <NavLink   rel="labs" to="/labs">LABS</NavLink></li>
+                        {/* <li className={this.getNavLinkClass("/labs")}>
+                            <NavLink   rel="labs" to="/labs">LABS</NavLink></li> */}
                         <li className={this.getNavLinkClass("/contact")}>
                             <NavLink   rel="contact" to="/contact">CONTACT</NavLink></li>
                     </ul>

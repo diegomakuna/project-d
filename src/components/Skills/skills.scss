@@ -1,61 +1,164 @@
-.section-skills{
-   
+.section-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .section-skills .container-section {
+  display: flex;
+  align-self: center;
+  width: 100%;
+ 
+  .back-container {
+    flex-grow: 1;
     display: flex;
-    background-color:red;
-    width: 100%;
-    height: 100%;
-    .front-container{
-        background-color:#ff0;
-        flex-grow: 1;
-        li{
-            width: 304px;
-         h4{
-            text-align: right;
-        }
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    position: relative;
+    h2 {
+      transform: rotate(-90deg);
+
+      position: absolute;
+      top: 132px;
+      right: -35px;
+      letter-spacing: 12px;
+     
     }
-        ul{
-            list-style: none;
-            border: 1px solid #f00;
-            
-        }
+    li {
+      width: 280px;
+      margin-bottom: 18px;
+      margin-right: 0px;
+      h4 {
+        text-align: right;
+    color: #fff;
+    font-family: "Morganite-Light";
+    font-size: 32px;
+    margin: 0;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: flex-end; */
+      align-items: flex-end;
+
+      li:nth-child(1) {
+        margin-right: 60px !important ;
+      }
+      li:nth-child(2) {
+        margin-right: 172px;
+      }
+      li:nth-child(3) {
+        margin-right: 162px;
+      }
+      li:nth-child(4) {
+        margin-right: 140px;
+      }
+      li:nth-child(5) {
+        margin-right: 80px;
+      }
+    }
+  }
+  .front-container {
     
+    flex-grow: 1;
+    width: 50%;
+    position: relative;
+    h2 {
+      position: absolute;
+      left: -35px;
+      transform: rotate(90deg);
+      top: 137px;
+      letter-spacing: 3px;
+     
     }
-    .back-container{
-        background-color:green; 
-        flex-grow: 1;
-    }
-    h2{
-        font-family: 'Morganite-Black';
-        font-size: 170px;
-        margin: 0;
+    ul{
         padding: 0;
-        
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-end; */
+        align-items: flex-start;
+        li:nth-child(1) {
+            margin-left: 60px !important ;
+          }
+          li:nth-child(2) {
+            margin-left: 172px;
+          }
+          li:nth-child(3) {
+            margin-left: 162px;
+          }
+          li:nth-child(4) {
+            margin-left: 140px;
+          }
+          li:nth-child(5) {
+            margin-left: 80px;
+          }
     }
-    .percent{
+    li {
+        width: 280px;
+        margin-bottom: 18px;
+        margin-right: 0px;
+        h4 {
+          text-align: left;
+      color: #fff;
+      font-family: "Morganite-Light";
+      font-size: 32px;
+      margin: 0;
+      padding: 10px 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+  
+        }
+        .parcent-count {
+            left: 0;
+            background-image: linear-gradient(to right, #2641fe, #fc009d);
+        }
         
-        height: 7px;
-        overflow: hidden;
-        position: relative;
-        border-radius: 15px;
-        .parcent-count{
-            position: absolute;
-            right: 0;
-            border-radius: 15px;
-            width: 90%;
-            height: 100%;
-            background-image: linear-gradient(to right, #0324fe , #fc009d );
-            z-index: 2;
-        }
-        .parcent-background{
-            background-color: #b7b7b7;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 0.4;
-        }
+      }
+  }
+  h2 {
+    font-family: "Morganite-Black";
+    font-size: 140px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 100px;
+  }
+  .percent {
+    height: 7px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    .parcent-count {
+      position: absolute;
+      right: 0;
+      border-radius: 15px;
+      width: 90%;
+      height: 100%;
+      background-image: linear-gradient(to right, #fc009d, #2641fe);
+      z-index: 2;
     }
+    .parcent-background {
+      background-color: #b7b7b7;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0.3;
+    }
+  }
 }

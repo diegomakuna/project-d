@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope  } from '@fortawesome/free-solid-svg-icons'
+import { faSkype  } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp  } from '@fortawesome/free-brands-svg-icons'
 import "./contact.scss";
 
 class Contact extends Component {
@@ -6,8 +10,26 @@ class Contact extends Component {
         
         return(
             <div className="section-contact">
+                <div class="layer-transparent"></div>
                 <div className="container-section">
-                Contact
+                   <h2>Contact </h2>
+                   <p>vamos bater um papo sobre tecnologia?</p>
+                   <ul>
+                       <li>
+                             <span><FontAwesomeIcon icon={faEnvelope} className="icon icon-mail" /></span>
+                             <i class="fab fa-envelope"></i>
+                           <span>diegomakuna@gmail.com</span>
+                       </li>
+                       <li>
+                             <span><FontAwesomeIcon icon={faSkype} className="icon icon-skype" /></span>
+                           <span>Skype</span>
+                       </li>
+                       <li>
+                             <span><FontAwesomeIcon icon={faWhatsapp} className="icon icon-whatssap" /></span>
+                           <span>Whatssap</span>
+                       </li>
+                       
+                   </ul>
             </div>
             </div>
         )
