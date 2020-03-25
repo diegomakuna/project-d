@@ -5,9 +5,9 @@ class Home extends Component {
         return(
             <div className="section-home">
                 <div className="home-container">
-                    <div className="imagebox img-0"></div>
-                    <div className="imagebox img-1"></div>
-                    <div className="imagebox img-2"></div>
+                    <div className="imagebox img-0 slide-in-elliptic-left-fwd"></div>
+                    <div className="imagebox img-1 slide-in-elliptic-left-fwd"></div>
+                    <div className="imagebox img-2 slide-in-elliptic-left-fwd "></div>
                     <div className="intro-text">
                         <div className="text-0">
                             WITH GREAT

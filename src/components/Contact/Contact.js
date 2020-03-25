@@ -17,16 +17,15 @@ class Contact extends Component {
                    <ul>
                        <li>
                              <span><FontAwesomeIcon icon={faEnvelope} className="icon icon-mail" /></span>
-                             <i class="fab fa-envelope"></i>
-                           <span>diegomakuna@gmail.com</span>
+                            <span>diegomakuna@gmail.com</span>
                        </li>
                        <li>
                              <span><FontAwesomeIcon icon={faSkype} className="icon icon-skype" /></span>
-                           <span>Skype</span>
+                           <span>diegomakuna</span>
                        </li>
                        <li>
                              <span><FontAwesomeIcon icon={faWhatsapp} className="icon icon-whatssap" /></span>
-                           <span>Whatssap</span>
+                           <span>55 (11) 97197-3600</span>
                        </li>
                        
                    </ul>

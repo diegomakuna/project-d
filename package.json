@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server  --mode development --module-bind js=babel-loader",
-    "build": "webpack --mode production --module-bind js=babel-loader"
+    "build": "webpack --config webpack.prod.config.js --mode production --module-bind js=babel-loader"
   },
   "repository": {
     "type": "git",
@@ -39,10 +39,12 @@
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "css-loader": "^3.2.0",
+    "gsap": "^3.2.6",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
+    "react-transition-group": "^4.3.0",
     "sass-loader": "^7.2.0"
   }
 }
