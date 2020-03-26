@@ -21,13 +21,13 @@ class Header extends Component {
                             <NavLink exact rel="home" to="/"  >HOME</NavLink>
                         </li>
                         <li className={this.getNavLinkClass("/sobre")}>
-                        <NavLink   rel="sobre" to="/sobre">ABOUT</NavLink></li>
+                        <NavLink   rel="sobre" to="/sobre">SOBRE</NavLink></li>
                         <li className={this.getNavLinkClass("/skills")}>
-                            <NavLink   rel="skills" to="/skills" >SKILLS</NavLink></li>
+                            <NavLink   rel="skills" to="/skills" >HABILIDADES</NavLink></li>
                         {/* <li className={this.getNavLinkClass("/labs")}>
                             <NavLink   rel="labs" to="/labs">LABS</NavLink></li> */}
                         <li className={this.getNavLinkClass("/contact")}>
-                            <NavLink   rel="contact" to="/contact">CONTACT</NavLink></li>
+                            <NavLink   rel="contact" to="/contact">CONTATO</NavLink></li>
                     </ul>
                     </div>
                </div>

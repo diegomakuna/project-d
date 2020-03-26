@@ -116,7 +116,7 @@ class About extends Component {
                     />
                     <a href="#">
                       {" "}
-                      NEXT? <br /> wanna work together? <br /> Contact me now
+                      PRÓXIMO ? <br /> Vamos trabalhar juntos ? <br /> Entre em contato agora
                     </a>
                   </div>
                 </li>

@@ -40,16 +40,16 @@ class Home extends Component {
                     <div className="imagebox img-2 slide-in-elliptic-left-fwd "></div>
                     <div className="intro-text">
                         <div className="text-0">
-                            WITH GREAT
+                            COM GRANDES
                         </div>
                         <div className="text-1">
-                            POWER,
+                        <span> PODERES,</span>
                         </div>
                         <div className="text-2">
-                            COME GREAT
+                            VEM GRANDES
                         </div>
                         <div className="text-3">
-                            RESPONSABILITY
+                        RESPONSABILIDADES
                         </div>
                     </div>
                 </div>

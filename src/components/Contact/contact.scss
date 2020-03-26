@@ -1,13 +1,4 @@
-#gradient-horizontal {
-    --color-stop-1: #a770ef;
-    --color-stop-2: #cf8bf3;
-    --color-stop-3: #fdb99b;
-  }
-  #gradient-vertical {
-    --color-stop-1: #00c3ff;
-    --color-stop-2: #77e190;
-    --color-stop-3: #ffff1c;
-  }
+
 .section-contact{
     display: flex;
     width: 100%;
@@ -59,12 +50,16 @@
             display: block;
             flex-direction: column;
             padding: 45px 0;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
             span{
                 display: block;
                 padding: 10px;
                 .icon{
                     font-size: 115px;
-            }
+                 }
            
                 
             }
