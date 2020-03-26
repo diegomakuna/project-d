@@ -10,7 +10,7 @@ class Contact extends Component {
         
         return(
             <div className="section-contact">
-                <div class="layer-transparent"></div>
+                <div className="layer-transparent"></div>
                 <div className="container-section">
                    <h2>Contact </h2>
                    <p>vamos bater um papo sobre tecnologia?</p>

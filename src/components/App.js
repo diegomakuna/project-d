@@ -34,7 +34,8 @@ class App extends Component {
                   key={key}
                   appear={true}
                   onEnter={(node, appears) => play(pathname, node, appears)}
-                  timeout={{ enter: 750, exit: 0 }}>
+                  onExit={(node, appears) => exit(node, appears)}
+                  timeout={{ enter: 750, exit:100 }}>
                   <Switch location={location}>
                     <Route name="home" exact path="/" component={HomePage} />
                     <Route name="about" path="/sobre" component={AboutPage} />
