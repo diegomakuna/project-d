@@ -1,40 +1,94 @@
 import React, { Component } from "react";
 import "./header.scss";
-import { NavLink, BrowserRouter as Router, }  from 'react-router-dom'
+import { NavLink, BrowserRouter as Router, } from 'react-router-dom'
 import { withRouter } from "react-router";
+import { TimelineMax as Timeline, Power1, Power4, Back } from "gsap";
 class Header extends Component {
-    getNavLinkClass = (path) => {
-   
-        return this.props.location.pathname === path ? 'active' : '';
-      }
-    render() {
-        return (
-            <div className="header">
-                    <div className="logo">
-                <h1 className="text-center">Diego Araujo</h1>
-               <span className="subtitle"> Web Developer </span>
-               </div>
-               <div className="nav">
-                    <div className="nav-container">
-                    <ul>
-                        <li className={this.getNavLinkClass("/")}>
-                            <NavLink exact rel="home" to="/"  >HOME</NavLink>
-                        </li>
-                        <li className={this.getNavLinkClass("/sobre")}>
-                        <NavLink   rel="sobre" to="/sobre">SOBRE</NavLink></li>
-                        <li className={this.getNavLinkClass("/skills")}>
-                            <NavLink   rel="skills" to="/skills" >HABILIDADES</NavLink></li>
-                        {/* <li className={this.getNavLinkClass("/labs")}>
-                            <NavLink   rel="labs" to="/labs">LABS</NavLink></li> */}
-                        <li className={this.getNavLinkClass("/contact")}>
-                            <NavLink   rel="contact" to="/contact">CONTATO</NavLink></li>
-                    </ul>
-                    </div>
-               </div>
-               <div className="header-right">
+    _timeline = null;
+    constructor(props) {
+        super(props);
+        this.state = {
+            menuToggle:false
+        };
+    }
 
-               </div>
-              
+    componentDidMount() {
+
+        this._timeline = new Timeline({ paused: false });
+        console.log(this.props)
+    }
+
+    _onMouseMove(e) {
+        this.setState({ x: e.screenX, y: e.screenY });
+    }
+
+    getNavLinkClass = (path) => {
+
+        return this.props.location.pathname === path ? 'active' : '';
+    }
+    _mouseOver = (evt) => {
+
+        // console.log("----------------------------------------")
+        // console.log(evt)
+        // console.log("----------------------------------------")
+        // console.log(evt.currentTarget)
+        // const line = evt.currentTarget.querySelector(".line")
+
+        //   this._timeline.to(line, 0.0, { width: '100%', height:'2px' }, { x: "-30px", ease: Power4.ease }, 0)
+        // .to(teamLine, 2.5, { x: "100px", opacity: 1, ease: Power2.ease}, 0)
+    }
+
+    _mouseLeave = (evt) => {
+        //  const line = evt.currentTarget.querySelector(".line")
+
+        //  this._timeline.to(line, 0.1, { width: 0, height:'2px' , ease: Power4.ease })
+    }
+
+    _menuToggle = (value) =>{
+        this.setState({menuToggle: value});
+    }
+
+    render() {
+
+        return (
+            <div className={`header ${this.props.className}`}>
+                <div className="logo">
+                    <h1 className="text-center">Diego Araujo</h1>
+                    <span className="subtitle"> Web Developer </span>
+                </div>
+                <div className={`nav ${this.state.menuToggle ? 'is-active' : ''}`}>
+                <div class={`hamburger hamburger--squeeze js-hamburger ${this.state.menuToggle ? 'is-active' : ''}`} onClick={() => this._menuToggle(!this.state.menuToggle)} >
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                    <div className="nav-container">
+                        <ul>
+                            <li className={this.getNavLinkClass("/")} onMouseEnter={this._mouseOver} onMouseLeave={this._mouseLeave}>
+                                <NavLink exact rel="home" to="/" onClick={() => this._menuToggle(false)}  >HOME</NavLink>
+                                <div className="line"></div>
+                            </li>
+                            <li className={this.getNavLinkClass("/sobre")}>
+                                <NavLink rel="sobre" to="/sobre" onClick={() => this._menuToggle(false)}>SOBRE</NavLink>
+                                <div className="line"></div>
+                            </li>
+                            <li className={this.getNavLinkClass("/skills")}>
+                                <NavLink rel="skills" to="/skills" onClick={() => this._menuToggle(false)} >HABILIDADES</NavLink>
+                                <div className="line"></div>
+                            </li> 
+                            {/* <li className={this.getNavLinkClass("/labs")}>
+                            <NavLink   rel="labs" to="/labs">LABS</NavLink></li> */}
+                            <li className={this.getNavLinkClass("/contact")}>
+                                <NavLink rel="contact" to="/contact" onClick={() => this._menuToggle(false)}>CONTATO</NavLink>
+                                <div className="line"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="header-right">
+                  
+                </div>
+
             </div>
         )
     }

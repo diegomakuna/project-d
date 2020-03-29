@@ -15,46 +15,64 @@ import ContactPage from './Contact/Contact';
 import "./app.scss";
 
 class App extends Component {
-  render(){
-  return (
-    <BrowserRouter>
+  constructor(props) {
+    super(props);
+ 
+  }
 
-      <Header />
+
+ 
+  _changeFonts = (path) => {
+    if(path === "/contact"){ return "blackColor" }
+   
+      return ""
+  }
+  render() {
+    return (
+      <BrowserRouter>
 
 
-      <div className="wrapper">
-        <div className="container">
-          <Route render={({ location }) => {
+        <Route render={({ location }) => {
 
-            const { pathname, key } = location
+          const { pathname, key } = location
 
-            return (
-              <TransitionGroup component={null}>
-                <Transition
-                  key={key}
-                  appear={true}
-                  onEnter={(node, appears) => play(pathname, node, appears)}
-                  onExit={(node, appears) => exit(node, appears)}
-                  timeout={{ enter: 750, exit:100 }}>
-                  <Switch location={location}>
-                    <Route name="home" exact path="/" component={HomePage} />
-                    <Route name="about" path="/sobre" component={AboutPage} />
-                    <Route name="skills" path="/skills" component={SkillsPage} />
-                    {/* <Route name="lab" path="/lab" component={LabPage} /> */}
-                    <Route name="Contact" path="/contact" component={ContactPage} /> */}
-              </Switch>
-                </Transition>
-              </TransitionGroup>
-            )
-          }}
-          />
-        </div>
-      </div>
+          console.log("Chamou Render");
 
-      <Footer />
-    </BrowserRouter>
-  );
-};
+          return (
+            <>
+              <Header className={this._changeFonts(pathname)} />
+
+
+              <div className="wrapper">
+                <div className="container">
+                  <TransitionGroup component={null}>
+                    <Transition
+                      key={key}
+                      appear={true}
+                      onEnter={(node, appears) => play(pathname, node, appears)}
+                      onExit={(node, appears) => exit(node, appears)}
+                      timeout={{ enter: 750, exit: 100 }}>
+                      <Switch location={location}>
+                        <Route name="home" exact path="/" component={HomePage} />
+                        <Route name="about" path="/sobre" component={AboutPage} />
+                        <Route name="skills" path="/skills" component={SkillsPage} />
+                        {/* <Route name="lab" path="/lab" component={LabPage} /> */}
+                        <Route name="Contact" path="/contact" component={() => <ContactPage className={this._changeFonts(pathname)}/> } /> */}
+                      </Switch>
+                    </Transition>
+                  </TransitionGroup>
+                </div>
+              </div>
+
+              <Footer className={this._changeFonts(pathname)} />
+            </>
+          )
+        }}
+        />
+
+      </BrowserRouter>
+    );
+  };
 };
 
 export default App;

@@ -72,6 +72,7 @@ class About extends Component {
               </div>
             </div>
             <div className="timeline">
+            
               <ul>
                 <li>
                   <div className="job">

@@ -6,7 +6,7 @@ import "./footer.scss";
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <div className={`footer ${this.props.className}`}>
         <ul className="footer-links">
           <li>
             <a href="#">
