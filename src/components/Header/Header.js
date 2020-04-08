@@ -57,9 +57,9 @@ class Header extends Component {
                     <span className="subtitle"> Web Developer </span>
                 </div>
                 <div className={`nav ${this.state.menuToggle ? 'is-active' : ''}`}>
-                <div class={`hamburger hamburger--squeeze js-hamburger ${this.state.menuToggle ? 'is-active' : ''}`} onClick={() => this._menuToggle(!this.state.menuToggle)} >
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
+                <div className={`hamburger hamburger--squeeze js-hamburger ${this.state.menuToggle ? 'is-active' : ''}`} onClick={() => this._menuToggle(!this.state.menuToggle)} >
+                        <div className="hamburger-box">
+                            <div className="hamburger-inner"></div>
                         </div>
                     </div>
                     <div className="nav-container">
@@ -72,14 +72,14 @@ class Header extends Component {
                                 <NavLink rel="sobre" to="/sobre" onClick={() => this._menuToggle(false)}>SOBRE</NavLink>
                                 <div className="line"></div>
                             </li>
-                            <li className={this.getNavLinkClass("/skills")}>
-                                <NavLink rel="skills" to="/skills" onClick={() => this._menuToggle(false)} >HABILIDADES</NavLink>
+                            <li className={this.getNavLinkClass("/habilidades")}>
+                                <NavLink rel="habilidades" to="/habilidades" onClick={() => this._menuToggle(false)} >HABILIDADES</NavLink>
                                 <div className="line"></div>
                             </li> 
                             {/* <li className={this.getNavLinkClass("/labs")}>
                             <NavLink   rel="labs" to="/labs">LABS</NavLink></li> */}
-                            <li className={this.getNavLinkClass("/contact")}>
-                                <NavLink rel="contact" to="/contact" onClick={() => this._menuToggle(false)}>CONTATO</NavLink>
+                            <li className={this.getNavLinkClass("/contato")}>
+                                <NavLink rel="contato" to="/contato" onClick={() => this._menuToggle(false)}>CONTATO</NavLink>
                                 <div className="line"></div>
                             </li>
                         </ul>

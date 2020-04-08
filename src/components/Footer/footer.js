@@ -9,18 +9,18 @@ class Footer extends Component {
       <div className={`footer ${this.props.className}`}>
         <ul className="footer-links">
           <li>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/diegoaraujo8" target="black">
               <FontAwesomeIcon icon={faLinkedin} /> 
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/diegomakuna" target="black">
               <FontAwesomeIcon icon={faGithubAlt} />
             </a>
           </li>
         </ul>
         <div className="powredby">
-            <span className="text">powred by<br/>Diego</span>
+            <span className="text">powered by<br/>Diego</span>
             <span className="year">2020</span>
         </div>
       </div>

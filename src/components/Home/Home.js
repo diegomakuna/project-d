@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { TimelineMax as Timeline, Power1, Power4,Back } from "gsap";
+
 import "./home.scss";
 class Home extends Component {
      _timeline = null;
@@ -10,9 +11,26 @@ class Home extends Component {
 
     componentDidMount() {
         
-        this._InitAnimation()
+       // this._InitAnimation()
+       this._animationText()
     }
 
+    _animationText = () => {
+        this._timeline = new Timeline({ paused: false });
+        let introText = document.querySelector(".home-container");
+       
+       
+        let t1 = 0.40
+        let t2 = 0.60
+      
+            this._timeline.from(introText, t1 += 0.10 , { autoAlpha: 0,delay:0,  ease: Power1.easeIn, clearProps:"all" }, 0.5)
+            this._timeline.from(introText, t2+= 0.10, {  y: 50, delay:0, ease: Power4.easeInOut, clearProps:"all" },0.5)
+         
+        
+      }
+        
+
+    
     _InitAnimation = () => {
         this._timeline = new Timeline({ paused: false });
         const introText = document.querySelector(".intro-text");
@@ -33,9 +51,14 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="section-home">
-                <div className="home-container">
-                    <div className="imagebox img-0 slide-in-elliptic-left-fwd"></div>
+          <div className="section-home">
+           
+            <div className="home-container">
+          
+              <h2>FULLSTACK</h2>
+              <h3>WEB DEVELOPER</h3>
+
+              {/* <div className="imagebox img-0 slide-in-elliptic-left-fwd"></div>
                     <div className="imagebox img-1 slide-in-elliptic-left-fwd"></div>
                     <div className="imagebox img-2 slide-in-elliptic-left-fwd "></div>
                     <div className="intro-text">
@@ -51,10 +74,10 @@ class Home extends Component {
                         <div className="text-3">
                         RESPONSABILIDADES
                         </div>
-                    </div>
-                </div>
+                    </div> */}
             </div>
-        )
+          </div>
+        );
     }
 }
 export default Home

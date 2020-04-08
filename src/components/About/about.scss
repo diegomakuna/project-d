@@ -39,7 +39,7 @@
           position: absolute;
         }
         h2 {
-          font-size: 24px;
+          font-size: 22px;
           margin-top: 0px;
         }
         p {
@@ -196,9 +196,7 @@
 }
 
 @media (max-width: 731px) {
-  html {
-    background: #f00;
-  }
+ 
   .section-about {
     position: relative;
     .about-left {

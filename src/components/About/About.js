@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {BrowserRouter as Router,Link,} from "react-router-dom";
 import { TimelineMax as Timeline, Power1, Power4,Back } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
@@ -45,30 +46,13 @@ class About extends Component {
             <div className="description-container">
               <div className="description-text">
                 <div className="since-text">SINCE 1987</div>
-                <h2>I’m lucky because my work is also one of my passions</h2>
-                <p>
-                  {" "}
-                  Currently working as a creative front-end developer at Vdu Web
-                  Agency, a small studio based in Turin, Italy. Sometimes I take
-                  freelance work.
+                <h2>Olá , eu sou o Diego araujo. Desenvolvedor web de São Paulo / Brazil.  </h2>
+                <p>Trabalho profissionalmente como desenvolvedor web desde o ano de 2006 e tive a oportunidade de atuar em diversos projetos utilizando diversas tecnologias. 
                 </p>
 
-                <p>
-                  I specialize in Drupal front-end development but also like
-                  trying out other technologies in order to become more
-                  flexible.
-                </p>
+                <p> Sou apaixonado pela minha profissão e o impacto positivo que ela pode causar na vida das pessoas direta e indiretamente.</p>
 
-                <p>
-                  I enjoy collaborating on interesting projects that I can be
-                  proud of.
-                </p>
-
-                <p>
-                  Another great passion of mine is surfing, not wind-surfing or
-                  kite-surfing, just surfing, as in the movie Point Break, but
-                  with smaller waves and no robberies.
-                </p>
+                <p>Tenho habilidades e conhecimentos práticos no desenvolvimento de soluções  corporativas,  atuando como front/back-end.  Acredito que uma visão de ponta a ponta aliada a experiência e comprometimento são de extrema importância no desenvolvimento de projetos web que sejam  simples,  robustos e eficientes.</p>
               </div>
             </div>
             <div className="timeline">
@@ -115,10 +99,9 @@ class About extends Component {
                       icon={faComment}
                       className="icon-message"
                     />
-                    <a href="#">
-                      {" "}
-                      PRÓXIMO ? <br /> Vamos trabalhar juntos ? <br /> Entre em contato agora
-                    </a>
+                     <Link to="/contato">
+                      PRÓXIMO ? <br /> Vamos trabalhar juntos ? <br /> Entre em contato
+                      </Link>
                   </div>
                 </li>
               </ul>

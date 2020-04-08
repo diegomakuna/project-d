@@ -62,7 +62,7 @@ $secondary-fontcolor: #000;
         pointer-events: none;
         transform: translate(-50%, -50%);
       }
-      &:hover .line {
+      &.active .line, &:hover .line {
         width: 100%;
       }
     }
