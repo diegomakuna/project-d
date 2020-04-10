@@ -15,7 +15,7 @@ class Header extends Component {
     componentDidMount() {
 
         this._timeline = new Timeline({ paused: false });
-        console.log(this.props)
+        
     }
 
     _onMouseMove(e) {
@@ -28,10 +28,7 @@ class Header extends Component {
     }
     _mouseOver = (evt) => {
 
-        // console.log("----------------------------------------")
-        // console.log(evt)
-        // console.log("----------------------------------------")
-        // console.log(evt.currentTarget)
+       
         // const line = evt.currentTarget.querySelector(".line")
 
         //   this._timeline.to(line, 0.0, { width: '100%', height:'2px' }, { x: "-30px", ease: Power4.ease }, 0)

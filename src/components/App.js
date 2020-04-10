@@ -3,6 +3,7 @@ import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import { play, exit } from './timeline/timelines'
 import { browserHistory } from 'react-router';
+import ReactGA from 'react-ga';
 
 import Header from './Header/Header';
 import Footer from './Footer/footer';
@@ -23,12 +24,28 @@ class App extends Component {
   }
 
 
+  componentDidMount() {
+        
+    this.initializeReactGA();
+}
+
+
  
   _changeFonts = (path) => {
+
+    ReactGA.pageview(path);
     if(path === "/contato"){ return "blackColor" }
    
       return ""
   }
+
+  
+
+   initializeReactGA = () => {
+    ReactGA.initialize('UA-163209479-1');
+    
+}
+
   render() {
     return (
       <BrowserRouter>
@@ -38,7 +55,7 @@ class App extends Component {
 
           const { pathname, key } = location
 
-          console.log("Chamou Render");
+         
 
           return (
             <>

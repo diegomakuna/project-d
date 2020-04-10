@@ -24,7 +24,7 @@ class About extends Component {
         this._timeline.from(elemtLeft, 1.0, {  width: 0, delay:0, ease: "back.out(1.0)", clearProps:"all" },0.2)
         .from(elemtRight, 0.9, {  width: 0, ease: "expo.inOut", clearProps:"all"  }, 1.0)
         .from(elemtDescription, 0.70, { autoAlpha: 0,  ease: Power1.easeOut }, 1.0)
-        //console.log(elemtLeft);
+        
 
         let t1 = 0.70
         let t2 = 0.60
