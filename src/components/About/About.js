@@ -61,21 +61,21 @@ class About extends Component {
                 <li>
                   <div className="job">
                     <span className="company">O3 DIGITAL</span>
-                    <span className="office">front-and</span>
+                    <span className="office">front-end</span>
                     <span className="years">2006 - 2006 </span>
                   </div>
                 </li>
                 <li>
                   <div className="job">
                     <span className="company">DIGITAS</span>
-                    <span className="office">front-and</span>
+                    <span className="office">front-end</span>
                     <span className="years">2007 - 2010 </span>
                   </div>
                 </li>
                 <li>
                   <div className="job">
                     <span className="company">ITHINK</span>
-                    <span className="office">front-and</span>
+                    <span className="office">front-end</span>
                     <span className="years">2010 - 2012 </span>
                   </div>
                 </li>
