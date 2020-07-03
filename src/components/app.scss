@@ -171,8 +171,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    
     .wrapper{
-     
+      z-index:1;
       flex-grow: 1;
       flex-basis: auto;
       .container{
@@ -200,6 +201,20 @@ body {
     height: 100%;
     top:0;
     left: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    
+    background-image: linear-gradient(to top, #2641fe, #fc009d);
+    min-height: 40px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
   }
 
  

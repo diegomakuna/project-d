@@ -2,7 +2,7 @@ import { TimelineMax as Timeline, Power1, Power4, Back } from "gsap";
 import CSSPlugin from 'gsap/CSSPlugin';
 const C = CSSPlugin;  // here is the gotcha....
 export const play = (pathname, node, appears) => {
- 
+ console.log(node)
   const delay = appears ? 0 : 0.3;
   let timeline;
 

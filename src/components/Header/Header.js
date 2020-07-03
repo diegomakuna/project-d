@@ -8,14 +8,14 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            menuToggle:false
+            menuToggle: false
         };
     }
 
     componentDidMount() {
 
         this._timeline = new Timeline({ paused: false });
-        
+
     }
 
     _onMouseMove(e) {
@@ -28,7 +28,7 @@ class Header extends Component {
     }
     _mouseOver = (evt) => {
 
-       
+
         // const line = evt.currentTarget.querySelector(".line")
 
         //   this._timeline.to(line, 0.0, { width: '100%', height:'2px' }, { x: "-30px", ease: Power4.ease }, 0)
@@ -41,8 +41,8 @@ class Header extends Component {
         //  this._timeline.to(line, 0.1, { width: 0, height:'2px' , ease: Power4.ease })
     }
 
-    _menuToggle = (value) =>{
-        this.setState({menuToggle: value});
+    _menuToggle = (value) => {
+        this.setState({ menuToggle: value });
     }
 
     render() {
@@ -54,7 +54,7 @@ class Header extends Component {
                     <span className="subtitle"> Web Developer </span>
                 </div>
                 <div className={`nav ${this.state.menuToggle ? 'is-active' : ''}`}>
-                <div className={`hamburger hamburger--squeeze js-hamburger ${this.state.menuToggle ? 'is-active' : ''}`} onClick={() => this._menuToggle(!this.state.menuToggle)} >
+                    <div className={`hamburger hamburger--squeeze js-hamburger ${this.state.menuToggle ? 'is-active' : ''}`} onClick={() => this._menuToggle(!this.state.menuToggle)} >
                         <div className="hamburger-box">
                             <div className="hamburger-inner"></div>
                         </div>
@@ -72,9 +72,11 @@ class Header extends Component {
                             <li className={this.getNavLinkClass("/habilidades")}>
                                 <NavLink rel="habilidades" to="/habilidades" onClick={() => this._menuToggle(false)} >HABILIDADES</NavLink>
                                 <div className="line"></div>
-                            </li> 
-                            {/* <li className={this.getNavLinkClass("/labs")}>
-                            <NavLink   rel="labs" to="/labs">LABS</NavLink></li> */}
+                            </li>
+                            <li className={this.getNavLinkClass("/labs")}>
+                                <NavLink rel="labs" to="/labs" onClick={() => this._menuToggle(false)}>LABS</NavLink>
+                                <div className="line"></div>
+                                </li>
                             <li className={this.getNavLinkClass("/contato")}>
                                 <NavLink rel="contato" to="/contato" onClick={() => this._menuToggle(false)}>CONTATO</NavLink>
                                 <div className="line"></div>
@@ -83,7 +85,7 @@ class Header extends Component {
                     </div>
                 </div>
                 <div className="header-right">
-                  
+
                 </div>
 
             </div>
