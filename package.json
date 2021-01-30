@@ -1,26 +1,52 @@
 {
-  "name": "",
-  "version": "0.0.1",
+  "name": "project-d",
+  "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-install": "^0.6.0"
-  },
-  "devDependencies": {
-    "browser-sync": "^1.9.1",
-    "gulp": "^3.8.10",
-    "gulp-concat": "^2.4.3",
-    "gulp-minify-css": "^0.3.11",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.2.0",
-    "gulp-stylus": "^1.3.4",
-    "gulp-uglify": "^1.0.2",
-    "gulp-util": "^3.0.2",
-    "nib": "^1.0.4"
-  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server  --mode development --module-bind js=babel-loader",
+    "build": "webpack --config webpack.prod.config.js --mode production --module-bind js=babel-loader"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegomakuna/project-d.git"
+  },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegomakuna/project-d/issues"
+  },
+  "homepage": "https://github.com/diegomakuna/project-d#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "file-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "css-loader": "^3.2.0",
+    "gsap": "^3.2.6",
+    "mini-css-extract-plugin": "^0.8.0",
+    "react-ga": "^2.7.0",
+    "react-particles-js": "^3.0.3",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-transition-group": "^4.3.0",
+    "sass-loader": "^7.2.0"
+  }
 }

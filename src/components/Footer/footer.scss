@@ -1,0 +1,55 @@
+$primary-fontcolor: #fff;
+$secondary-fontcolor: #000;
+
+.footer {
+  padding: 20px 30px;
+  bottom: 0px;
+  z-index: 5;
+  color: $primary-fontcolor;
+  display: flex;
+  justify-content: space-between;
+
+  .footer-links {
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    li {
+      align-self: center;
+
+      a {
+        color: $primary-fontcolor;
+        display: block;
+        padding: 0 5px;
+      }
+    }
+  }
+  .powredby {
+    display: flex;
+    .text {
+      text-align: right;
+      font-size: 11px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 14px;
+      padding: 6px 10px;
+    }
+    .year {
+      font-size: 36px;
+      font-family: "Morganite-Light";
+    }
+  }
+}
+
+.footer.blackColor {
+  color: $secondary-fontcolor;
+  .footer-links a {
+    color: $secondary-fontcolor;
+  }
+}
+
+@media (max-width: 801px) {
+  .footer {
+    padding: 20px 15px;
+  }
+}
