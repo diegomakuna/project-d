@@ -64,10 +64,10 @@ class App extends Component {
                  params={{
                   "particles": {
                       "number": {
-                          "value": 200,
+                          "value": 190,
                           "density": {
                               "enable": true,
-                              "value_area": 1803.4120608655228
+                              "value_area": 2500
                           }
                       },
                       "color": {
@@ -75,7 +75,7 @@ class App extends Component {
                       },
                      
                       "opacity": {
-                          "value": 0.8,
+                          "value": 0.5,
                           "random": false,
                           "anim": {
                               "enable": true,
@@ -96,8 +96,8 @@ class App extends Component {
                       },
                       "line_linked": {
                           "enable": true,
-                          "distance":200,
-                          "color": "#ffffff",
+                          "distance":150,
+                          "color": "#002dff",
                           "opacity": .3,
                           "width":1
                       },
@@ -117,15 +117,15 @@ class App extends Component {
                       }
                   },
                   "interactivity": {
-                      "detect_on": "window",
+                      "detect_on": "canvas",
                       "events": {
                           "onhover": {
                               "enable": true,
-                              "mode": "repulse"
+                              "mode": "bubble"
                           },
                           "onclick": {
-                              "enable": false,
-                              "mode": "bubble"
+                              "enable": true,
+                              "mode": "repulse"
                           },
                           "resize": true
                       },
@@ -137,8 +137,8 @@ class App extends Component {
                               }
                           },
                           "bubble": {
-                              "distance": 600,
-                              "size": 40,
+                              "distance": 250,
+                              "size": 10,
                               "duration": 2,
                               "opacity": 8,
                               "speed": 3

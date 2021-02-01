@@ -43,6 +43,7 @@
     "gsap": "^3.2.6",
     "mini-css-extract-plugin": "^0.8.0",
     "react-ga": "^2.7.0",
+    "react-loader-spinner": "^3.1.14",
     "react-particles-js": "^3.0.3",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",

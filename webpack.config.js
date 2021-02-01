@@ -32,7 +32,7 @@ module.exports = {
         ]
       },
       {
-        test: /.(jpg|jpeg|png|gif|mp3|svg)$/,
+        test: /.(jpg|jpeg|png|gif|mp3|svg|ico)$/,
         use: [
           {
             loader: "file-loader",
@@ -52,7 +52,8 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
-      filename: "./index.html"
+      filename: "./index.html",
+      favicon: './src/assests/image/favicon.ico',
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

@@ -46,7 +46,7 @@ class About extends Component {
             <div className="description-container">
               <div className="description-text">
                 <div className="since-text">SINCE 1987</div>
-                <h2>Olá , eu sou o Diego araujo. Desenvolvedor web de São Paulo / Brazil.  </h2>
+                <h2>Olá , eu sou o Diego araujo. Desenvolvedor web de São Paulo / Brasil.  </h2>
                 <p>Trabalho profissionalmente como desenvolvedor web desde o ano de 2006 e tive a oportunidade de atuar em diversos projetos utilizando diversas tecnologias. 
                 </p>
 
@@ -58,25 +58,11 @@ class About extends Component {
             <div className="timeline">
             
               <ul>
-                <li>
+              <li>
                   <div className="job">
-                    <span className="company">O3 DIGITAL</span>
-                    <span className="office">front-end</span>
-                    <span className="years">2006 - 2006 </span>
-                  </div>
-                </li>
-                <li>
-                  <div className="job">
-                    <span className="company">DIGITAS</span>
-                    <span className="office">front-end</span>
-                    <span className="years">2007 - 2010 </span>
-                  </div>
-                </li>
-                <li>
-                  <div className="job">
-                    <span className="company">ITHINK</span>
-                    <span className="office">front-end</span>
-                    <span className="years">2010 - 2012 </span>
+                    <span className="company">NETBIIS</span>
+                    <span className="office">FULL-STACK</span>
+                    <span className="years">2015 - 2020 </span>
                   </div>
                 </li>
                 <li>
@@ -88,11 +74,29 @@ class About extends Component {
                 </li>
                 <li>
                   <div className="job">
-                    <span className="company">NETBIIS</span>
-                    <span className="office">FULL-STACK</span>
-                    <span className="years">2015 - 2020 </span>
+                    <span className="company">ITHINK</span>
+                    <span className="office">front-end</span>
+                    <span className="years">2010 - 2012 </span>
                   </div>
                 </li>
+                <li>
+                  <div className="job">
+                    <span className="company">DIGITAS</span>
+                    <span className="office">front-end</span>
+                    <span className="years">2007 - 2010 </span>
+                  </div>
+                </li>
+                <li>
+                  <div className="job">
+                    <span className="company">O3 DIGITAL</span>
+                    <span className="office">front-end</span>
+                    <span className="years">2006 - 2006 </span>
+                  </div>
+                </li>
+              
+              
+                
+             
                 <li className="next">
                   <div className="job">
                     <FontAwesomeIcon
