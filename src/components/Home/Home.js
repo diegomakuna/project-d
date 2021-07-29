@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { TimelineMax as Timeline, Power1, Power4,Back } from "gsap";
-
+import Loader from 'react-loader-spinner';
 import "./home.scss";
 class Home extends Component {
      _timeline = null;
@@ -34,7 +34,7 @@ class Home extends Component {
     _InitAnimation = () => {
         this._timeline = new Timeline({ paused: false });
         const introText = document.querySelector(".intro-text");
-        const words = introText?.childNodes;
+        const words = introText.childNodes;
         this._timeline.from(introText, 0.45, { autoAlpha: 0,  ease: Power1.easeOut, clearProps:"all" });
 
         let t1 = 0.40

@@ -52,7 +52,7 @@ $secondary-fontcolor: #000;
       position: relative;
       .line {
         height: 2px;
-        background: red;
+        background: #FFF;
         transition: 0.5s;
         position: absolute;
         left: 50%;
@@ -68,7 +68,11 @@ $secondary-fontcolor: #000;
     }
 
     li.active a {
-      color: #f00;
+      
+      background: -webkit-linear-gradient(#fc009d, #2641fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
     }
     a {
       display: block;
@@ -78,10 +82,10 @@ $secondary-fontcolor: #000;
       letter-spacing: 4px;
 
       &:hover {
-        color: red;
-        //background: linear-gradient(to top, #fc009d, #2641fe);
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(#fc009d, #2641fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 600;
       }
     }
   }

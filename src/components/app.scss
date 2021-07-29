@@ -3,6 +3,8 @@ $font-title: 'Muli', sans-serif;
 $font-text: 'Montserrat', sans-serif;
 
 
+
+
 @font-face {
   font-family: 'Morganite-SemiBoldItalic';
   src: url('/src/assests/fonts/morganite/Morganite-SemiBoldItalic.woff2') format('woff2'),
@@ -163,6 +165,23 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+  }
+  .loading{
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: black;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    svg{
+      align-self: center;
+    }
+   
+    
   }
   .full-screen{
     height: 100%;
