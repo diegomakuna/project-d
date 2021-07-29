@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { TimelineMax as Timeline, Power1, Power4,Back } from "gsap";
-
+import Loader from 'react-loader-spinner';
 import "./home.scss";
 class Home extends Component {
      _timeline = null;

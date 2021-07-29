@@ -60,6 +60,13 @@ class About extends Component {
               <ul>
               <li>
                   <div className="job">
+                    <span className="company">PRORADIS</span>
+                    <span className="office">FULL-STACK</span>
+                    <span className="years">2020 - 2021 </span>
+                  </div>
+                </li>
+              <li>
+                  <div className="job">
                     <span className="company">NETBIIS</span>
                     <span className="office">FULL-STACK</span>
                     <span className="years">2015 - 2020 </span>
