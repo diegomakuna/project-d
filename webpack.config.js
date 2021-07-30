@@ -53,7 +53,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: "./src/index.html",
       filename: "./index.html",
-      favicon: './src/assests/image/favicon.ico',
+      favicon: './src/assets/image/favicon.ico',
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import PropTypes from "prop-types";
 import { withRouter } from "react-router";
-import perfil from '../../assests/image/perfil.jpg';
+import perfil from '../../assets/image/perfil.jpg';
 import "./sidebar.scss";
 class SideBar extends Component {
   getNavLinkClass = (path) => {
