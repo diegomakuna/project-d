@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Router, Route, Switch } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import { play, exit } from './timeline/timelines'
-import { browserHistory } from 'react-router';
 import ReactGA from 'react-ga';
 import Loader from 'react-loader-spinner';
 
