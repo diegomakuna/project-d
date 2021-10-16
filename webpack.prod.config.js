@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry:'./src/index.js',
@@ -42,7 +43,12 @@ module.exports = {
           }
           
         ]
-       }
+       },
+       {
+        test: /\.(woff|woff2|eot|ttf|svg)$/,
+        exclude: /node_modules/,
+        loader: 'url-loader?limit=1024&name=fonts/[name].[ext]'
+    }
       ]
   },
   devServer: {
@@ -52,12 +58,22 @@ module.exports = {
   plugins: [
     new HtmlWebPackPlugin({
       template: "./src/index.html",
-      filename: "./index.html"
+      filename: "./index.html",
+      favicon: './favicon.ico',
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "./src/assets/fonts",
+          to: "./src/assets/fonts",
+        },
+      ],
+    }),
+
   
   ]
 };
