@@ -46,7 +46,7 @@ class About extends Component {
             <div className="description-container">
               <div className="description-text">
                 <div className="since-text">SINCE 1987</div>
-                <h2>Olá , eu sou o Diego Araujo. Desenvolvedor web de São Paulo / Brasil.  </h2>
+                <h2>Olá , eu sou o Diego Araujo de oliveira. Desenvolvedor web de São Paulo / Brasil.  </h2>
                 <p>Trabalho profissionalmente como desenvolvedor web desde o ano de 2006 e tive a oportunidade de atuar em diversos projetos utilizando diversas tecnologias. 
                 </p>
 
