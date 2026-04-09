@@ -21,7 +21,7 @@ class Footer extends Component {
         </ul>
         <div className="powredby">
             <span className="text">powered by<br/>Diego</span>
-            <span className="year">2020</span>
+            <span className="year">2020 / 2026</span>
         </div>
       </div>
     );

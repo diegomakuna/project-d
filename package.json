@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server  --mode development --module-bind js=babel-loader",
-    "build": "webpack --config webpack.prod.config.js --mode production --module-bind js=babel-loader"
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --mode development --module-bind js=babel-loader",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --config webpack.prod.config.js --mode production --module-bind js=babel-loader"
   },
   "repository": {
     "type": "git",
@@ -24,12 +24,13 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^6.0.1",
+    "cross-env": "^10.1.0",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.14.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "sass": "^1.77.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.11.2"
